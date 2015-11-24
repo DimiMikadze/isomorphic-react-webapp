@@ -12,4 +12,9 @@ app.get('*', function(req, res) {
 
 var port = process.env.PORT || '3000';
 
-app.listen(port);
+var server = app.listen(port, function() {
+    var host = server.address().address;
+    var port = server.address().port;
+
+    console.log("app listening on " + host + " " + port);
+});
