@@ -6,12 +6,19 @@ app.set('view engine', 'html');
 app.use(express.static("public"));
 app.use(express.static("views"));
 
-app.get('*', function(req, res) {
-    if (req.headers.host.match(/^www/) !== null ) {
-        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
-    } else {
-        res.sendFile(__dirname + '/views/index.html');
+function wwwRedirect(req, res, next) {
+    if (req.headers.host.slice(0, 4) === 'www.') {
+        var newHost = req.headers.host.slice(4);
+        return res.redirect(301, req.protocol + '://' + newHost + req.originalUrl);
     }
+    next();
+}
+
+app.set('trust proxy', true);
+app.use(wwwRedirect);
+
+app.get('*', function(req, res) {
+    res.sendFile(__dirname + '/views/index.html');
 });
 
 var port = process.env.PORT || '3000';
