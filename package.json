@@ -15,7 +15,8 @@
   "author": "Dimitri Mikadze",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "gulp-env": "^0.2.0"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
