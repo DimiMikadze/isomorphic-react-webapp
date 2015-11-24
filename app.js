@@ -7,7 +7,11 @@ app.use(express.static("public"));
 app.use(express.static("views"));
 
 app.get('*', function(req, res) {
-    res.sendFile(__dirname + '/views/index.html');
+    if (req.headers.host.match(/^www/) !== null ) {
+        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else {
+        res.sendFile(__dirname + '/views/index.html');
+    }
 });
 
 var port = process.env.PORT || '3000';
