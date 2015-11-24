@@ -1,0 +1,20 @@
+.skills {
+  text-align: center;
+  h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .tech {
+    margin-top: 2em;
+    font-size: 2em;
+    li {
+      margin-right: 2em;
+      list-style-type: none;
+      font-size: 0.6em;
+      &:hover {
+        margin-right: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@include font-face("Bakersfield", "bakersfield_light-webfont");
+
+body {
+  font-family: 'Bakersfield', serif;
+}
+
+.pages-container {
+  margin-top: 20em;
+}
+
+.active {
+  border-bottom: 1px dotted black;
+}
+
+a:visited, a:after, a:active, a:focus, a:checked, a:enabled, a:link {
+  text-decoration: none !important;
+}
+
+a {
+  outline: none !important;
+}

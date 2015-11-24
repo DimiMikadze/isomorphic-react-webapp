@@ -1,0 +1,15 @@
+footer {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 10em;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  img {
+    width: 2em;
+    margin: 3em 0.5em;
+  }
+}

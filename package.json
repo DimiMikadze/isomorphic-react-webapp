@@ -1,0 +1,24 @@
+{
+  "name": "dm",
+  "version": "1.0.0",
+  "description": "Dimitri Mikadze Personal Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "UI/UX",
+    "Designer",
+    "Web",
+    "Developer"
+  ],
+  "author": "Dimitri Mikadze",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}

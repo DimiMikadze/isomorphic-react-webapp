@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dimitri Mikadze</title>
+    <base href="/">
+    <meta name="description" content="Dimitri Mikadze is a digital Designer/Developer from Tbilisi, Georgia. collaborating with amazing people around the world to create beautifully-designed, robust solutions">
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bundle.css">
+</head>
+<body ng-app="app">
+
+<div class="container">
+
+    <header>
+        <div class="logo col-xs-2 col-sm-4">
+            <h1>
+                <a ui-sref="me">
+                    <span class="hidden-sm hidden-xs">Dimitri Mikadze</span>
+                    <span class="hidden-lg hidden-md">DM</span>
+                </a>
+            </h1>
+        </div>
+
+        <nav class="col-xs-10 col-sm-8">
+            <ul class="pull-right">
+                <li>
+                    <a ui-sref="me" ui-sref-active="active">Me</a>
+                </li>
+                <li>
+                    <a ui-sref="work" ui-sref-active="active">Work</a>
+                </li>
+                <li>
+                    <a ui-sref="skills" ui-sref-active="active">Skills</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div ui-view class="pages-container"></div>
+
+    <footer class="col-xs-12">
+
+        <h3>Lets Talk.</h3>
+
+        <a href="https://www.facebook.com/Ditmens" target="_blank">
+            <img src="/images/fb.png" alt="Facebook">
+        </a>
+
+        <a href="https://github.com/DimitriMikadze" target="_blank">
+            <img src="/images/github.png" alt="Github">
+        </a>
+
+        <a href="https://twitter.com/DimitriMikadze" target="_blank">
+            <img src="/images/twitter.png" alt="Twitter">
+        </a>
+
+        <a href="https://www.linkedin.com/profile/view?id=AAMAABSP054BMC3w5ePc2YYXGPRJsMWdAG3H6Fs&trk=hp-identity-name" target="_blank">
+            <img src="/images/linkedin.png" alt="LinkedIn">
+        </a>
+
+    </footer>
+
+</div>
+
+<script src="/libs/angular/angular.min.js"></script>
+<script src="/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>

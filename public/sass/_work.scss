@@ -1,0 +1,24 @@
+.work {
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+  .work-container {
+    margin-bottom: 3em;
+    position: relative;
+    text-align: center;
+    padding-bottom: 1em;
+    &:hover {
+      @include shaddow-box(2);
+    }
+    h3 {
+      color: #000000;
+    }
+    img {
+      margin-top: 1em;
+      width: 100%;
+      border: 1px solid #ededed;
+    }
+  }
+}
