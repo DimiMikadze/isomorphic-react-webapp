@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dimitri Mikadze<%= title %></title>
+    <title>
+        <% if(title !== '') { %>
+            <%= 'Dimitri Mikadze - ' + title %>
+        <% } else { %>
+            <%= 'Dimitri Mikadze' %>
+        <% } %>    
+    </title>
+
     <meta name="description" content="Dimitri Mikadze is a digital Designer/Developer from Tbilisi, Georgia. collaborating with amazing people around the world to create beautifully-designed, robust solutions">
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
@@ -35,13 +42,13 @@
         <nav class="col-xs-10 col-sm-8">
             <ul class="pull-right">
                 <li>
-                    <a href="/">Me</a>
+                    <a class="<% if(title === '') { %> <%= 'active' %> <% } %>" href="/">Me</a>
                 </li>
                 <li>
-                    <a href="/work">Work</a>
+                    <a class="<% if(title === 'Work') { %> <%= 'active' %> <% } %>" href="/work">Work</a>
                 </li>
                 <li>
-                    <a href="/skills">Skills</a>
+                    <a class="<% if(title === 'Skills') { %> <%= 'active' %> <% } %>" href="/skills">Skills</a>
                 </li>
             </ul>
         </nav>

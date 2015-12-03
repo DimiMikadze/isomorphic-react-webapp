@@ -11,11 +11,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/work', function(req, res) {
-    res.render(__dirname + '/views/work', { title: ' - Work' });
+    res.render(__dirname + '/views/work', { title: 'Work' });
 });
 
 app.get('/skills', function(req, res) {
-    res.render(__dirname + '/views/skills', { title : ' - Skills' });
+    res.render(__dirname + '/views/skills', { title : 'Skills' });
 });
 
 app.get('*', function(req, res) {
