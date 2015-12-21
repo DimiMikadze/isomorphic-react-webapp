@@ -11,7 +11,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/work', function(req, res) {
-    res.render(__dirname + '/views/work', { title: 'Work' });
+    res.render(__dirname + '/views/work', { title: 'Workp' });
 });
 
 app.get('/skills', function(req, res) {
