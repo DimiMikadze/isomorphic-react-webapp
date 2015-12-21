@@ -1,15 +1,52 @@
-footer {
-  overflow: hidden;
-  text-align: center;
-  margin-top: 10em;
-
+.lets-talk, .github {
+  color: #fff;
   a {
+    color: #cecece;
     &:hover {
-      text-decoration: none;
+      color: #fff;
     }
   }
-  img {
-    width: 2em;
-    margin: 3em 0.5em;
+}
+
+.lets-talk a {
+  margin-right: 2em;
+}
+
+@include md-bf-medium() {
+  .lets-talk, .github {
+    text-align: center;
+  }
+  .lets-talk {
+    margin-top: 10em;
+    margin-bottom: 5em;
+  }
+  .github {
+    margin-bottom: 5em;
+  }
+}
+
+@include md-bf-small() {
+  .lets-talk {
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+
+    h3 {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+  }
+
+  .github {
+    position: absolute;
+    bottom: 2em;
+    right: 1em;
+    text-align: right;
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+
   }
 }

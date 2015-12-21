@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.static("views"));
 
 app.get('/', function(req, res) {
-    res.render(__dirname + '/views/me', { title: '' });
+    res.render(__dirname + '/views/me', { title: 'Me' });
 });
 
 app.get('/work', function(req, res) {

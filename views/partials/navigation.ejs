@@ -1,0 +1,26 @@
+<header>
+
+    <div class="logo col-xs-2 col-sm-4">
+        <h1>
+            <a href="/">
+                <span class="hidden-sm hidden-xs">Dimitri Mikadze</span>
+                <span class="hidden-lg hidden-md">DM</span>
+            </a>
+        </h1>
+    </div>
+
+    <nav class="col-xs-10 col-sm-8">
+        <ul class="pull-right">
+            <li>
+                <a class="<% if(title === 'Me') { %> <%= 'active' %> <% } %>" href="/">Me</a>
+            </li>
+            <li>
+                <a class="<% if(title === 'Work') { %> <%= 'active' %> <% } %>" href="/work">Work</a>
+            </li>
+            <li>
+                <a class="<% if(title === 'Skills') { %> <%= 'active' %> <% } %>" href="/skills">Skills</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>

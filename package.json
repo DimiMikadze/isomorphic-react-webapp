@@ -4,7 +4,7 @@
   "description": "Dimitri Mikadze Personal Website",
   "main": "app.js",
   "scripts": {
-    "start" : "nodemon app.js && gulp sass:watch"
+    "start": "nodemon server.js"
   },
   "keywords": [
     "UI/UX",

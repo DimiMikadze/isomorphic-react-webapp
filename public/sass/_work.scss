@@ -1,24 +1,41 @@
-.work {
-  h1 {
-    font-size: 1.5em;
-    margin-bottom: 2em;
-    font-weight: bold;
+.work-container {
+
+  @include md-bf-small() {
+    height: 30em;
+    position: absolute;
+    margin-top: -15em;
+    top: 50%;
+    width: 100%;
   }
-  .work-container {
-    margin-bottom: 3em;
-    position: relative;
-    text-align: center;
-    padding-bottom: 1em;
-    &:hover {
-      @include shaddow-box(2);
+
+  @include md-bf-medium() {
+    margin-top: 15em;
+  }
+
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+    @include md-bf-small() {
+      height: 30em;
     }
-    h3 {
-      color: #000000;
-    }
-    img {
-      margin-top: 1em;
-      width: 100%;
-      border: 1px solid #ededed;
-    }
+    @include shaddow-box(3);
+  }
+
+  .carousel-control.left, .carousel-control.right {
+    background-image:none !important;
+    filter:none !important;
+  }
+
+  .active {
+    border: none;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: -3em !important;
+  }
+
+  .carousel-caption a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
   }
 }

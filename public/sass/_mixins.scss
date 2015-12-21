@@ -25,6 +25,18 @@
   }
 }
 
+@mixin md-bf-small {
+  @media (min-width: "992px") {
+    @content;
+  }
+}
+
+@mixin md-bf-medium {
+  @media (max-width: "991px") {
+    @content;
+  }
+}
+
 /*
   Background image
 */

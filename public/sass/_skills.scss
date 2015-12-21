@@ -1,12 +1,19 @@
 .skills {
+
+  color: #fff;
   text-align: center;
-  h1 {
-    font-size: 1.5em;
-    font-weight: bold;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 8em;
+
+  @include md-bf-medium() {
+    margin-top: 4em;
   }
+
   .tech {
     margin-top: 2em;
     font-size: 2em;
+
     li {
       margin-right: 2em;
       list-style-type: none;
@@ -17,4 +24,5 @@
       }
     }
   }
+
 }
