@@ -60,6 +60,14 @@ a, button {
       height: 95%;
       margin-top: 1.5%;
     }
+
+    @include md-small() {
+      width: 96%;
+    }
+    @include md-xsmall() {
+      width: 90%;
+    }
+
   }
 
 }
