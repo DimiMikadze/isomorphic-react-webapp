@@ -25,7 +25,7 @@ header {
         font-size: 1.3em;
 
         @include md-xsmall() {
-          font-size: 1em;
+          margin-left: 1em;
         }
 
         margin-left: 2em;
