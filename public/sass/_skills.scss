@@ -4,7 +4,14 @@
   text-align: center;
   overflow: hidden;
   margin: 0 auto;
-  margin-bottom: 8em;
+
+  @include md-bf-small() {
+    height: 40em;
+    position: absolute;
+    margin-top: -20em;
+    top: 50%;
+    width: 100%;
+  }
 
   @include md-bf-medium() {
     margin-top: 4em;

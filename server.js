@@ -6,20 +6,20 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(express.static("views"));
 
-app.get('/', function(req, res) {
-    res.render(__dirname + '/views/me', { title: 'Me' });
-});
-
-app.get('/work', function(req, res) {
-    res.render(__dirname + '/views/work', { title: 'Work' });
-});
-
-app.get('/skills', function(req, res) {
-    res.render(__dirname + '/views/skills', { title : 'Skills' });
-});
+//app.get('/', function(req, res) {
+//    res.render(__dirname + '/views/me', { title: 'Me' });
+//});
+//
+//app.get('/work', function(req, res) {
+//    res.render(__dirname + '/views/work', { title: 'Work' });
+//});
+//
+//app.get('/skills', function(req, res) {
+//    res.render(__dirname + '/views/skills', { title : 'Skills' });
+//});
 
 app.get('*', function(req, res) {
-    res.redirect('/');
+    res.render(__dirname + '/views/index', { title: 'Dimitri Mikadze' });
 });
 
 var port = process.env.PORT || '3000';
