@@ -15,8 +15,18 @@
     width: 100%;
   }
 
+  .slick-slider {
+    text-align: center;
+
+  }
+
+  .slick-slider a {
+    display: inline-block;
+  }
+
   .slick-slider img {
     margin: 0 auto;
+    transition: all .4s ease-in-out;
 
     @include md-bf-small() {
       height: 30em;
@@ -26,7 +36,11 @@
       width: 100%;
     }
 
-    @include shaddow-box(3);
+    @include shaddow-box(1);
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   .slick-prev {

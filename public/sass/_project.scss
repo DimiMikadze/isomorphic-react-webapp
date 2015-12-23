@@ -1,5 +1,10 @@
 .project-container {
 
+  img {
+    @include background-image('loading.gif');
+    background-position: center;
+  }
+
   position: relative;
   width: 100%;
   background-color: black;

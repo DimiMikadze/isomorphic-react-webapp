@@ -28,7 +28,11 @@ class Project extends React.Component {
         } else {
             this.next = projects[0].name;
         }
-    };
+    }
+
+    componentDidMount() {
+
+    }
 
     render() {
 

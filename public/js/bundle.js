@@ -24631,19 +24631,6 @@
 	                        _reactRouter.Link,
 	                        { to: '/project/magelani' },
 	                        _react2.default.createElement('img', { src: '../images/work/timberland.jpg', alt: 'Timberland Project' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'caption' },
-	                        'Timberland and Northface store in tbilisi ',
-	                        _react2.default.createElement('br', null),
-	                        'Website Design and Creation',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://188.166.2.188/', target: '_blank' },
-	                            'Visit Website'
-	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -24653,19 +24640,6 @@
 	                        _reactRouter.Link,
 	                        { to: '/project/citydubai' },
 	                        _react2.default.createElement('img', { src: '../images/work/citydubai.jpg', alt: 'Citydubai Project' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'caption' },
-	                        'A comprehensive virtual city guide for Dubai',
-	                        _react2.default.createElement('br', null),
-	                        'Website Creation',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://citydubai.com', target: '_blank' },
-	                            'Visit Website'
-	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -24675,19 +24649,6 @@
 	                        _reactRouter.Link,
 	                        { to: '/project/cherrytea' },
 	                        _react2.default.createElement('img', { src: '../images/work/cherrytea.jpg', alt: 'Cherrytea Project' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'caption' },
-	                        'A loyalty card that gives you a possibility to donate to your selected beneficier everyday',
-	                        _react2.default.createElement('br', null),
-	                        'Landing Page Design and Website Creation',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://cherrytea.ge', target: '_blank' },
-	                            'Visit Website'
-	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -24697,19 +24658,6 @@
 	                        _reactRouter.Link,
 	                        { to: '/project/eloan' },
 	                        _react2.default.createElement('img', { src: '../images/work/eloan.jpg', alt: 'Eloan Project' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'caption' },
-	                        'Georgian leader company in non-banking loans.',
-	                        _react2.default.createElement('br', null),
-	                        'Website Creation',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'https://eloan.ge', target: '_blank' },
-	                            'Visit Website'
-	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -24719,19 +24667,6 @@
 	                        _reactRouter.Link,
 	                        { to: '/project/upme' },
 	                        _react2.default.createElement('img', { src: '../images/work/upme.jpg', alt: 'Upme Project' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'caption' },
-	                        'Web and Mobile development company',
-	                        _react2.default.createElement('br', null),
-	                        'Website Design and Creation',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://upmelab.com', target: '_blank' },
-	                            'Visit Website'
-	                        )
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -24741,19 +24676,6 @@
 	                        _reactRouter.Link,
 	                        { to: '/project/tbilisee' },
 	                        _react2.default.createElement('img', { src: '../images/work/tbilisee.jpg', alt: 'Tbilisee Project' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'caption' },
-	                        'Easiest Way To Find Events, Restaurants, Cafe Bars, Movies, Theaters Clubs, Hotels, Fitness in Tbilisi, Georgia.',
-	                        _react2.default.createElement('br', null),
-	                        'Website Creation',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://tbilisee.com', target: '_blank' },
-	                            'Visit Website'
-	                        )
 	                    )
 	                )
 	            );
@@ -28129,6 +28051,9 @@
 	    }
 
 	    _createClass(Project, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {}
+	    }, {
 	        key: 'render',
 	        value: function render() {
 
