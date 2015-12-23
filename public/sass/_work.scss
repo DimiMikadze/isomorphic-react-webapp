@@ -9,7 +9,10 @@
   }
 
   @include md-bf-medium() {
-    margin-top: 15em;
+    position: absolute;
+    top: 20em;
+    margin-bottom: 10em;
+    width: 100%;
   }
 
   .slick-slider img {

@@ -26748,26 +26748,6 @@
 	    }
 
 	    _createClass(Main, [{
-	        key: 'renderPage',
-	        value: function renderPage() {
-	            if (typeof window.orientation === 'undefined') {
-	                return _react2.default.createElement(
-	                    _reactAddonsCssTransitionGroup2.default,
-	                    {
-	                        component: 'div',
-	                        transitionName: 'pages-transition',
-	                        transitionEnterTimeout: 500,
-	                        transitionLeaveTimeout: 500
-	                    },
-	                    _react2.default.cloneElement(this.props.children, {
-	                        key: this.props.location.pathname
-	                    })
-	                );
-	            } else {
-	                return this.props.children;
-	            }
-	        }
-	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -26777,7 +26757,18 @@
 	                    'div',
 	                    { className: 'wrapper' },
 	                    _react2.default.createElement(_Navigation2.default, null),
-	                    this.renderPage(),
+	                    _react2.default.createElement(
+	                        _reactAddonsCssTransitionGroup2.default,
+	                        {
+	                            component: 'div',
+	                            transitionName: 'pages-transition',
+	                            transitionEnterTimeout: 500,
+	                            transitionLeaveTimeout: 500
+	                        },
+	                        _react2.default.cloneElement(this.props.children, {
+	                            key: this.props.location.pathname
+	                        })
+	                    ),
 	                    _react2.default.createElement(_Contact2.default, null)
 	                )
 	            );

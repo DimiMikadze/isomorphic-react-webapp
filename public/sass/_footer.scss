@@ -14,7 +14,14 @@
 
 @include md-bf-medium() {
   .lets-talk, .github {
+
+    position: absolute;
+    top: 70em;
+    width: 100%;
+
     text-align: center;
+    overflow: hidden;
+    clear: both;
   }
   .lets-talk {
     margin-top: 10em;
