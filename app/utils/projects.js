@@ -2,7 +2,7 @@ module.exports = [
     {
         name: "magelani",
         desc: "Timberland and Northface store in tbilisi, Website design and creation",
-        main_image: "/images/test.jpg",
+        main_image: "/images/work/timberland.jpg",
         images: [
             { name: '/images/work/magelani/main.png' },
             { name: '/images/work/magelani/navigation.png' },
