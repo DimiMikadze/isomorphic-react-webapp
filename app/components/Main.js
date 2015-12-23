@@ -6,9 +6,13 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Main extends React.Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <div className="container main-container" id="#main-container">
+            <div className="container main-container" data-page={this.props.location.pathname}>
                 <div className="wrapper">
                     <Navigation />
 

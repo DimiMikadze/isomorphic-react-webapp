@@ -28,7 +28,7 @@
   }
 }
 
-[data-page="Me"] {
+[data-page="/"] {
   @include md-xsmall() {
     .lets-talk, .github {
       position: absolute;

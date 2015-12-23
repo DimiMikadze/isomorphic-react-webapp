@@ -3,11 +3,6 @@ import { Link } from 'react-router';
 
 class Me extends React.Component {
 
-    constructor(props) {
-        super(props);
-        document.body.dataset.page = props.route.component.name;
-    }
-
     render() {
         return (
             <div className="me-container">
