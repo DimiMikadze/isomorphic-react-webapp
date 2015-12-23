@@ -19705,10 +19705,13 @@
 	var Me = (function (_React$Component) {
 	    _inherits(Me, _React$Component);
 
-	    function Me() {
+	    function Me(props) {
 	        _classCallCheck(this, Me);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Me).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Me).call(this, props));
+
+	        document.body.dataset.page = props.route.component.name;
+	        return _this;
 	    }
 
 	    _createClass(Me, [{
@@ -24541,10 +24544,13 @@
 	var Work = (function (_React$Component) {
 	    _inherits(Work, _React$Component);
 
-	    function Work() {
+	    function Work(props) {
 	        _classCallCheck(this, Work);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Work).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Work).call(this, props));
+
+	        document.body.dataset.page = props.route.component.name;
+	        return _this;
 	    }
 
 	    _createClass(Work, [{
@@ -26752,7 +26758,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'container main-container' },
+	                { className: 'container main-container', id: '#main-container' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'wrapper' },
@@ -27680,10 +27686,13 @@
 	var Skills = (function (_React$Component) {
 	    _inherits(Skills, _React$Component);
 
-	    function Skills() {
+	    function Skills(props) {
 	        _classCallCheck(this, Skills);
 
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Skills).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Skills).call(this, props));
+
+	        document.body.dataset.page = props.route.component.name;
+	        return _this;
 	    }
 
 	    _createClass(Skills, [{

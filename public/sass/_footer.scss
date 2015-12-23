@@ -14,14 +14,10 @@
 
 @include md-bf-medium() {
   .lets-talk, .github {
-
     position: absolute;
-    top: 70em;
+    top: 60em;
     width: 100%;
-
     text-align: center;
-    overflow: hidden;
-    clear: both;
   }
   .lets-talk {
     margin-top: 10em;
@@ -29,6 +25,15 @@
   }
   .github {
     margin-bottom: 5em;
+  }
+}
+
+[data-page="Me"] {
+  @include md-xsmall() {
+    .lets-talk, .github {
+      position: absolute;
+      top: 90em;
+    }
   }
 }
 

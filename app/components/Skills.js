@@ -2,6 +2,11 @@ import React from 'react';
 
 class Skills extends React.Component {
 
+    constructor(props) {
+        super(props);
+        document.body.dataset.page = props.route.component.name;
+    }
+
     render() {
         return (
             <div className="col-xs-12 skills">

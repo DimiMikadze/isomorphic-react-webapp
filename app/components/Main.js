@@ -8,7 +8,7 @@ class Main extends React.Component {
 
     render() {
         return (
-            <div className="container main-container">
+            <div className="container main-container" id="#main-container">
                 <div className="wrapper">
                     <Navigation />
 
