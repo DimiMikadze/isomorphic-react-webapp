@@ -43,7 +43,6 @@ a, button {
 
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   position: relative;
   left: 0;
   top: 0;
@@ -100,7 +99,27 @@ a, button {
   }
 
   .pages-transition-leave.pages-transition-leave-active {
+    opacity: 0;
     left: 100%;
   }
 
+}
+
+@include md-bf-medium() {
+
+  .pages-transition-enter {
+    opacity: 0.01;
+  }
+
+  .pages-transition-enter.pages-transition-enter-active {
+    opacity: 1;
+  }
+
+  .pages-transition-leave {
+    opacity: 1;
+  }
+
+  .pages-transition-leave.pages-transition-leave-active {
+    opacity: 0;
+  }
 }

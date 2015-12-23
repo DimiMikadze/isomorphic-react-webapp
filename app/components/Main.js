@@ -11,6 +11,7 @@ class Main extends React.Component {
             <div className="container main-container">
                 <div className="wrapper">
                     <Navigation />
+
                         <ReactCSSTransitionGroup
                             component="div"
                             transitionName="pages-transition"
