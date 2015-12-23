@@ -40,6 +40,10 @@
     color: transparent;
     @include background-image('prev.png');
     background-size: 2em 4em;
+
+    @include md-xsmall() {
+      top: 30%;
+    }
   }
 
   .slick-next {
@@ -53,6 +57,11 @@
     color: transparent;
     @include background-image('next.png');
     background-size: 2em 4em;
+
+    @include md-xsmall() {
+      top: 30%;
+    }
+
   }
 
   .slick-dots {
