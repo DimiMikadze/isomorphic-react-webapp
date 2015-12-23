@@ -17,9 +17,15 @@
 
   .slick-slider img {
     margin: 0 auto;
+
     @include md-bf-small() {
       height: 30em;
     }
+
+    @include md-xsmall() {
+      width: 100%;
+    }
+
     @include shaddow-box(3);
   }
 
