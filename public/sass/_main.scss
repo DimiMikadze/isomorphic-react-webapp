@@ -104,23 +104,3 @@ a, button {
   }
 
 }
-
-@include md-bf-medium() {
-  .pages-transition-enter {
-    opacity: 0.01;
-    transition: opacity .5s ease-in;
-  }
-
-  .pages-transition-enter.pages-transition-enter-active {
-    opacity: 1;
-  }
-
-  .pages-transition-leave {
-    opacity: 1;
-    transition: opacity .5s ease-in;
-  }
-
-  .pages-transition-leave.pages-transition-leave-active {
-    opacity: 0;
-  }
-}

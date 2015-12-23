@@ -2,23 +2,22 @@
 
   color: #fff;
   text-align: center;
-  overflow: hidden;
-  margin: 0 auto;
 
   @include md-bf-small() {
-    height: 40em;
+    height: 36em;
     position: absolute;
-    margin-top: -20em;
+    margin-top: -18em;
     top: 50%;
     width: 100%;
   }
 
   @include md-bf-medium() {
     margin-top: 4em;
+    margin-bottom: 10em;
   }
 
   .tech {
-    margin-top: 2em;
+
     font-size: 2em;
 
     li {
@@ -26,8 +25,8 @@
       list-style-type: none;
       font-size: 0.6em;
       &:hover {
-        margin-right: 0.5em;
-        font-size: 1.5em;
+        margin-right: 1em;
+        font-size: 1em;
       }
     }
   }
