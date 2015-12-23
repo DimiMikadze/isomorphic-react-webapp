@@ -10,11 +10,15 @@ class Main extends React.Component {
         super(props);
     }
 
-    render() {
-        return (
-            <div className="container main-container" data-page={this.props.location.pathname}>
-                <div className="wrapper">
-                    <Navigation />
+    renderPages() {
+        const path = this.props.location.pathname;
+        let page = path.split('/')[1];
+
+        if(page !== 'project') {
+            return (
+                <div className="container main-container" data-page={this.props.location.pathname}>
+                    <div className="wrapper">
+                        <Navigation />
 
                         <ReactCSSTransitionGroup
                             component="div"
@@ -27,9 +31,18 @@ class Main extends React.Component {
                             })}
                         </ReactCSSTransitionGroup>
 
-                    <Contact />
+                        <Contact />
+                    </div>
                 </div>
-            </div>
+            )
+        } else {
+            return this.props.children;
+        }
+    }
+
+    render() {
+        return (
+            this.renderPages()
         )
     }
 

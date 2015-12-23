@@ -24,12 +24,12 @@ class Navigation extends React.Component {
                             </IndexLink>
                         </li>
                         <li>
-                            <Link to="work" activeClassName="active">
+                            <Link to="/work" activeClassName="active">
                                 Work
                             </Link>
                         </li>
                         <li>
-                            <Link to="skills" activeClassName="active">
+                            <Link to="/skills" activeClassName="active">
                                 Skills
                             </Link>
                         </li>
