@@ -8,7 +8,7 @@ html, body {
 }
 
 @include md-bf-medium() {
-  body {
+  body, html {
     background: url('../../images/wave3.jpg');
     background-attachment: fixed;
     background-size: cover;
