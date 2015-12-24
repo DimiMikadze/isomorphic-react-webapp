@@ -1,3 +1,4 @@
+@include md-bf-small() {
 
   .pages-transition-enter {
     opacity: 0.01;
@@ -20,3 +21,27 @@
     opacity: 0;
     left: 100%;
   }
+
+}
+
+@include md-bf-medium() {
+
+  .pages-transition-enter {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+  }
+
+  .pages-transition-enter.pages-transition-enter-active {
+    opacity: 1;
+  }
+
+  .pages-transition-leave {
+    opacity: 1;
+    transition: opacity .1s ease-out;
+  }
+
+  .pages-transition-leave.pages-transition-leave-active {
+    opacity: 0;
+  }
+
+}
