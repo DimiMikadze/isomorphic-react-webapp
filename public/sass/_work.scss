@@ -32,6 +32,10 @@
       height: 30em;
     }
 
+    @include md-small() {
+      height: 24em;
+    }
+
     @include md-xsmall() {
       width: 100%;
     }
@@ -75,7 +79,6 @@
     @include md-xsmall() {
       top: 30%;
     }
-
   }
 
   .slick-dots {
