@@ -50,22 +50,24 @@ class Project extends React.Component {
                     <div className="close-btn">X</div>
                 </Link>
 
+                <div className="project-desc">
 
-                <div className="container project-desc">
-                    <h1>
-                        {this.p.desc}
-                    </h1>
+                    <div className="container">
+                        <h1>
+                            {this.p.desc}
+                        </h1>
 
-                    <div className="project-images">
-                        {images}
+                        <div className="project-images">
+                            {images}
+                        </div>
+
+                        <div className="next-project">
+                            <a href={`/project/${this.next}`} >
+                                Next
+                            </a>
+                        </div>
                     </div>
 
-                </div>
-
-                <div className="next-project">
-                    <a href={`/project/${this.next}`} >
-                        Next
-                    </a>
                 </div>
 
             </div>
