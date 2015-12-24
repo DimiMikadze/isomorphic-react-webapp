@@ -65,6 +65,8 @@
   text-align: center;
 
   a {
+    display: block;
+    width: 100%;
     color: #000;
     &:hover {
       color: #8c8c8c;

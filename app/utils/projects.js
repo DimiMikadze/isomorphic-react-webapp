@@ -59,5 +59,5 @@ module.exports = [
             { name: '/images/work/tbilisee/home.jpg' },
             { name: '/images/work/tbilisee/object.jpg' }
         ]
-    },
+    }
 ];

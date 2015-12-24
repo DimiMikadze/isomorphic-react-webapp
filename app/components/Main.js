@@ -3,7 +3,6 @@ import Navigation from './Navigation';
 import Contact from './Contact';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-
 class Main extends React.Component {
 
     constructor(props) {
