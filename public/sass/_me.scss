@@ -9,8 +9,7 @@
   }
 
   @include md-bf-medium() {
-    position: absolute;
-    top: 20em;
+    margin-top: 10em;
     margin-bottom: 10em;
   }
 
@@ -18,10 +17,14 @@
 
 .about-me {
   text-align: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 
   p {
+    padding: 0 6em;
+    @include md-bf-medium() {
+      padding: 0 1em;
+    }
     font-size: 2em;
     color: #e2e2e2;
     text-shadow: 1px 1px 10px #333;

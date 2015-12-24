@@ -10,8 +10,8 @@ class Navigation extends React.Component {
                 <div className="logo col-xs-2 col-sm-4">
                     <h1>
                         <Link to="/">
-                            <span className="hidden-sm hidden-xs">Dimitri Mikadze</span>
-                            <span className="hidden-lg hidden-md">DM</span>
+                            <span className="hide-bf-small">Dimitri Mikadze</span>
+                            <span className="hide-bf-medium">DM</span>
                         </Link>
                     </h1>
                 </div>

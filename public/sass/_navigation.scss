@@ -1,5 +1,7 @@
 header {
 
+  overflow: hidden;
+
   .logo {
     margin-top: 1em;
 
@@ -10,7 +12,7 @@ header {
   }
 
   nav {
-    margin-top: 2.9em;
+    margin-top: 2em;
 
     li {
       display: inline;

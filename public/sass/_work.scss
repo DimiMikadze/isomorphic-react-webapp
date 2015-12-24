@@ -3,16 +3,14 @@
   @include md-bf-small() {
     height: 30em;
     position: absolute;
-    margin-top: -16em;
+    margin-top: -14em;
     top: 50%;
     width: 100%;
   }
 
   @include md-bf-medium() {
-    position: absolute;
-    top: 20em;
+    margin-top: 10em;
     margin-bottom: 10em;
-    width: 100%;
   }
 
   .slick-slider {
@@ -29,7 +27,7 @@
     transition: all .4s ease-in-out;
 
     @include md-bf-small() {
-      height: 30em;
+      height: 26em;
     }
 
     @include md-small() {
@@ -50,7 +48,7 @@
   .slick-prev {
     position: absolute;
     left: 1em;
-    top: 40%;
+    top: 34%;
     width: 2em;
     height: 4em;
     background: 0 0;
@@ -67,7 +65,7 @@
   .slick-next {
     position: absolute;
     right: 1em;
-    top: 40%;
+    top: 34%;
     width: 2em;
     height: 4em;
     background: 0 0;
