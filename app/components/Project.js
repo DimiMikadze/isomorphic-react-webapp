@@ -18,6 +18,7 @@ class Project extends React.Component {
         if(project[0] === undefined) {
             window.location = '/work';
         }
+
         this.p = project[0];
 
         let projectIndex = projects.indexOf(project[0]);
