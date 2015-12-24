@@ -6,8 +6,13 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(express.static("views"));
 
-app.get('*', function(req, res) {
-    res.render(__dirname + '/views/index');
+// Route handler for www requests
+app.get('*', function(req, res, next) {
+    if (req.headers.host.match(/^www/) !== null ) {
+        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else {
+        res.render(__dirname + '/views/index');
+    }
 });
 
 var port = process.env.PORT || '3000';
