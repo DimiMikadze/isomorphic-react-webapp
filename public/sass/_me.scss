@@ -9,8 +9,9 @@
   }
 
   @include md-bf-medium() {
-    margin-top: 10em;
-    margin-bottom: 10em;
+    position: relative;
+    top: 10em;
+    margin-bottom: 20em;
   }
 
 }
