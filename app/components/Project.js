@@ -54,16 +54,23 @@ class Project extends React.Component {
 
                     <div className="container">
                         <h1>
-                            {this.p.desc}
+                            {this.p.desc} <br /><br />
+                            {this.p.job}
                         </h1>
 
                         <div className="project-images">
                             {images}
                         </div>
 
+                        <div className="project-link">
+                            <a href={this.p.url} target="_blank">
+                                Visit Website
+                            </a>
+                        </div>
+
                         <div className="next-project">
                             <a href={`/project/${this.next}`} >
-                                Next
+                                Next Work
                             </a>
                         </div>
                     </div>

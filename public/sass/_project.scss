@@ -56,12 +56,30 @@
     }
   }
 
+  .project-link {
+    margin-top: 8em;
+    width: 100%;
+    text-align: center;
+
+    a {
+      font-size: 1em;
+      color: #8c8c8c;
+      &:hover {
+        color: #3388cc;
+      }
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }
 
 .next-project {
   padding: 2em 0;
   width: 100%;
-  font-size: 6em;
+  font-size: 4em;
   text-align: center;
 
   a {

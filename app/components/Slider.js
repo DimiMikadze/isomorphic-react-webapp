@@ -55,6 +55,12 @@ class Slider extends React.Component {
                     </Link>
                 </div>
 
+                <div className="slider-item">
+                    <Link to="/project/cms">
+                        <img src="../images/work/cms.jpg" alt="Tbilisee Project" />
+                    </Link>
+                </div>
+
             </SlickSlider>
         )
     }
