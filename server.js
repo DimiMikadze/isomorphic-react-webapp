@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
+app.engine("html", require("ejs").renderFile);
+app.set("views", __dirname + "/views");
 
 app.use(express.static("public"));
 app.use(express.static("views"));
@@ -10,7 +12,7 @@ app.get('*', function(req, res) {
     if (req.headers.host.match(/^www/) !== null ) {
         res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
     } else {
-        res.render(__dirname + '/views/index');
+        res.render('index.html');
     }
 });
 
