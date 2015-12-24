@@ -1,4 +1,10 @@
+.project-wrapper {
+  background-color: #fff;
+}
+
 .project-container {
+
+  background-color: #fff;
 
   img {
     @include background-image('loading.gif');
@@ -7,18 +13,22 @@
 
   position: relative;
   width: 100%;
-  background-color: black;
+  height: 100%;
   background-color: #fff;
   margin: 0;
   padding: 0;
 
   .close-btn {
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: .5em;
+    right: .5em;
     color: #fff;
-    font-size: 2em;
+    font-size: 3em;
     text-shadow: 1px 1px 1px #000;
+
+    &:hover {
+      text-shadow: 1px 1px 3px #000;
+    }
   }
 
   .main-image {
@@ -45,9 +55,9 @@
 }
 
 .next-project {
-  padding: 1em 0;
+  padding: 2em 0;
   width: 100%;
-  font-size: 10em;
+  font-size: 6em;
   text-align: center;
 
   a {

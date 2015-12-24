@@ -4,6 +4,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-color: #fff;
 }
 
 @include md-bf-medium() {
@@ -17,7 +18,6 @@ html, body {
 
 body {
   font-family: 'Bakersfield', serif;
-  background-color: #525453;
 }
 
 .active {

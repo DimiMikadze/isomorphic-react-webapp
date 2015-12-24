@@ -21,7 +21,7 @@ class Slider extends React.Component {
 
                 <div className="slider-item">
                     <Link to="/project/magelani">
-                        <img src="../images/work/timberland.jpg" alt="Timberland Project" />
+                        <img src="../images/work/magelani.jpg" alt="Timberland Project" />
                     </Link>
                 </div>
 

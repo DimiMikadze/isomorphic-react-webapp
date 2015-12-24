@@ -1,14 +1,13 @@
 module.exports = [
     {
         name: "magelani",
-        desc: "Timberland and Northface store in tbilisi, Website design and creation",
-        main_image: "/images/work/timberland.jpg",
+        desc: "Timberland and Northface store in Tbilisi, Georgia. Website design and creation.",
+        main_image: "/images/work/magelani.jpg",
         images: [
-            { name: '/images/work/magelani/main.png' },
-            { name: '/images/work/magelani/navigation.png' },
-            { name: '/images/work/magelani/categories.png' },
-            { name: '/images/work/magelani/product.png' },
-            { name: '/images/work/magelani/footer.png' },
+            { name: '/images/work/magelani/welcome.jpg' },
+            { name: '/images/work/magelani/navigation.jpg' },
+            { name: '/images/work/magelani/product.jpg' },
+            { name: '/images/work/magelani/footer.jpg' }
         ]
     },
     {
@@ -26,11 +25,11 @@ module.exports = [
         desc: "A loyalty card that gives you a possibility to donate to your selected beneficier everyday and even get benefits for this",
         main_image: "/images/work/cherrytea.jpg",
         images: [
-            { name: '/images/work/cherrytea/welcome.png' },
-            { name: '/images/work/cherrytea/card.png' },
+            { name: '/images/work/cherrytea/welcome.jpg' },
+            { name: '/images/work/cherrytea/card.jpg' },
             { name: '/images/work/cherrytea/form.png' },
-            { name: '/images/work/cherrytea/videos.png' },
-            { name: '/images/work/cherrytea/contact.png' },
+            { name: '/images/work/cherrytea/videos.jpg' },
+            { name: '/images/work/cherrytea/contact.png' }
         ]
     },
     {
@@ -39,7 +38,7 @@ module.exports = [
         main_image: "/images/work/eloan.jpg",
         images: [
             { name: '/images/work/eloan/welcome.png' },
-            { name: '/images/work/eloan/how.png' },
+            { name: '/images/work/eloan/how.jpg' }
         ]
     },
     {
@@ -47,9 +46,9 @@ module.exports = [
         desc: "Web and Mobile development company upme",
         main_image: "/images/work/upme.jpg",
         images: [
-            { name: '/images/work/upme/welcome.png' },
-            { name: '/images/work/upme/services.png' },
-            { name: '/images/work/upme/contact.png' },
+            { name: '/images/work/upme/welcome.jpg' },
+            { name: '/images/work/upme/services.jpg' },
+            { name: '/images/work/upme/contact.png' }
         ]
     },
     {
@@ -58,7 +57,7 @@ module.exports = [
         main_image: "/images/work/tbilisee.jpg",
         images: [
             { name: '/images/work/tbilisee/home.jpg' },
-            { name: '/images/work/tbilisee/object.jpg' },
+            { name: '/images/work/tbilisee/object.jpg' }
         ]
     },
 ];

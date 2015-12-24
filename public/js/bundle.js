@@ -60,21 +60,21 @@
 
 	var _Work2 = _interopRequireDefault(_Work);
 
-	var _Project = __webpack_require__(244);
+	var _Project = __webpack_require__(233);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Main = __webpack_require__(233);
+	var _Main = __webpack_require__(235);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Skills = __webpack_require__(242);
+	var _Skills = __webpack_require__(244);
 
 	var _Skills2 = _interopRequireDefault(_Skills);
 
 	var _reactRouter = __webpack_require__(160);
 
-	var _createBrowserHistory = __webpack_require__(243);
+	var _createBrowserHistory = __webpack_require__(245);
 
 	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
@@ -24630,7 +24630,7 @@
 	                    _react2.default.createElement(
 	                        _reactRouter.Link,
 	                        { to: '/project/magelani' },
-	                        _react2.default.createElement('img', { src: '../images/work/timberland.jpg', alt: 'Timberland Project' })
+	                        _react2.default.createElement('img', { src: '../images/work/magelani.jpg', alt: 'Timberland Project' })
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -26671,15 +26671,173 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Navigation = __webpack_require__(234);
+	var _reactRouter = __webpack_require__(160);
+
+	var _projects = __webpack_require__(234);
+
+	var _projects2 = _interopRequireDefault(_projects);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Project = (function (_React$Component) {
+	    _inherits(Project, _React$Component);
+
+	    function Project(props) {
+	        _classCallCheck(this, Project);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Project).call(this, props));
+
+	        var path = _this.props.location.pathname;
+	        var projectName = path.split('/')[2];
+	        var project = [];
+	        _projects2.default.map(function (proj, index) {
+	            if (proj.name === projectName) {
+	                project.push(proj);
+	            }
+	        });
+
+	        if (project[0] === undefined) {
+	            window.location = '/work';
+	        }
+	        _this.p = project[0];
+
+	        var projectIndex = _projects2.default.indexOf(project[0]);
+	        var projectCount = _projects2.default.length;
+
+	        if (projectIndex + 1 !== projectCount) {
+	            _this.next = _projects2.default[projectIndex + 1].name;
+	        } else {
+	            _this.next = _projects2.default[0].name;
+	        }
+	        return _this;
+	    }
+
+	    _createClass(Project, [{
+	        key: 'render',
+	        value: function render() {
+
+	            var images = this.p.images.map(function (img, index) {
+	                return _react2.default.createElement('img', { src: img.name, key: index });
+	            });
+
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'project-container' },
+	                _react2.default.createElement('div', { className: 'main-image',
+	                    style: { backgroundImage: 'url(' + this.p.main_image + ')',
+	                        backgroundSize: 'cover',
+	                        backgroundPosition: '50%' }
+	                }),
+	                _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: '/work' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'close-btn' },
+	                        'X'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container project-desc' },
+	                    _react2.default.createElement(
+	                        'h1',
+	                        null,
+	                        this.p.desc
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'project-images' },
+	                        images
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'next-project' },
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: '/project/' + this.next },
+	                        'Next'
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Project;
+	})(_react2.default.Component);
+
+	exports.default = Project;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = [{
+	    name: "magelani",
+	    desc: "Timberland and Northface store in Tbilisi, Georgia. Website design and creation.",
+	    main_image: "/images/work/magelani.jpg",
+	    images: [{ name: '/images/work/magelani/welcome.jpg' }, { name: '/images/work/magelani/navigation.jpg' }, { name: '/images/work/magelani/product.jpg' }, { name: '/images/work/magelani/footer.jpg' }]
+	}, {
+	    name: "citydubai",
+	    desc: "A comprehensive virtual city guide for Dubai, where locals and travelers can find complete information about restaurants, hotels, shops, activities etc. Make navigation through Dubai easy for locals and visitors.",
+	    main_image: "/images/work/citydubai.jpg",
+	    images: [{ name: '/images/work/citydubai/welcome.jpg' }, { name: '/images/work/citydubai/search.jpg' }, { name: '/images/work/citydubai/place.jpg' }]
+	}, {
+	    name: "cherrytea",
+	    desc: "A loyalty card that gives you a possibility to donate to your selected beneficier everyday and even get benefits for this",
+	    main_image: "/images/work/cherrytea.jpg",
+	    images: [{ name: '/images/work/cherrytea/welcome.jpg' }, { name: '/images/work/cherrytea/card.jpg' }, { name: '/images/work/cherrytea/form.png' }, { name: '/images/work/cherrytea/videos.jpg' }, { name: '/images/work/cherrytea/contact.png' }]
+	}, {
+	    name: "eloan",
+	    desc: "Georgian leader company in non-banking loans. to get a loan is very fast and easy, because everything from requesting a loan to get a loan performs online, without any need to wait.",
+	    main_image: "/images/work/eloan.jpg",
+	    images: [{ name: '/images/work/eloan/welcome.png' }, { name: '/images/work/eloan/how.jpg' }]
+	}, {
+	    name: "upme",
+	    desc: "Web and Mobile development company upme",
+	    main_image: "/images/work/upme.jpg",
+	    images: [{ name: '/images/work/upme/welcome.jpg' }, { name: '/images/work/upme/services.jpg' }, { name: '/images/work/upme/contact.png' }]
+	}, {
+	    name: "tbilisee",
+	    desc: "Easiest Way To Find Events, Restaurants, Cafe Bars, Movies, Theaters Clubs, Hotels, Fitness in Tbilisi, Georgia.",
+	    main_image: "/images/work/tbilisee.jpg",
+	    images: [{ name: '/images/work/tbilisee/home.jpg' }, { name: '/images/work/tbilisee/object.jpg' }]
+	}];
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Navigation = __webpack_require__(236);
 
 	var _Navigation2 = _interopRequireDefault(_Navigation);
 
-	var _Contact = __webpack_require__(235);
+	var _Contact = __webpack_require__(237);
 
 	var _Contact2 = _interopRequireDefault(_Contact);
 
-	var _reactAddonsCssTransitionGroup = __webpack_require__(236);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(238);
 
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 
@@ -26746,7 +26904,7 @@
 	exports.default = Main;
 
 /***/ },
-/* 234 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26853,7 +27011,7 @@
 	exports.default = Navigation;
 
 /***/ },
-/* 235 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26939,13 +27097,13 @@
 	exports.default = Contact;
 
 /***/ },
-/* 236 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(237);
+	module.exports = __webpack_require__(239);
 
 /***/ },
-/* 237 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -26966,8 +27124,8 @@
 
 	var assign = __webpack_require__(39);
 
-	var ReactTransitionGroup = __webpack_require__(238);
-	var ReactCSSTransitionGroupChild = __webpack_require__(240);
+	var ReactTransitionGroup = __webpack_require__(240);
+	var ReactCSSTransitionGroupChild = __webpack_require__(242);
 
 	function createTransitionTimeoutPropValidator(transitionType) {
 	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
@@ -27033,7 +27191,7 @@
 	module.exports = ReactCSSTransitionGroup;
 
 /***/ },
-/* 238 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27050,7 +27208,7 @@
 	'use strict';
 
 	var React = __webpack_require__(2);
-	var ReactTransitionChildMapping = __webpack_require__(239);
+	var ReactTransitionChildMapping = __webpack_require__(241);
 
 	var assign = __webpack_require__(39);
 	var emptyFunction = __webpack_require__(15);
@@ -27243,7 +27401,7 @@
 	module.exports = ReactTransitionGroup;
 
 /***/ },
-/* 239 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27346,7 +27504,7 @@
 	module.exports = ReactTransitionChildMapping;
 
 /***/ },
-/* 240 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -27366,7 +27524,7 @@
 	var React = __webpack_require__(2);
 	var ReactDOM = __webpack_require__(3);
 
-	var CSSCore = __webpack_require__(241);
+	var CSSCore = __webpack_require__(243);
 	var ReactTransitionEvents = __webpack_require__(221);
 
 	var onlyChild = __webpack_require__(156);
@@ -27516,7 +27674,7 @@
 	module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
-/* 241 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -27619,7 +27777,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ },
-/* 242 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27810,7 +27968,7 @@
 	exports.default = Skills;
 
 /***/ },
-/* 243 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -27986,163 +28144,6 @@
 	exports['default'] = createBrowserHistory;
 	module.exports = exports['default'];
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
-
-/***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(160);
-
-	var _projects = __webpack_require__(245);
-
-	var _projects2 = _interopRequireDefault(_projects);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Project = (function (_React$Component) {
-	    _inherits(Project, _React$Component);
-
-	    function Project(props) {
-	        _classCallCheck(this, Project);
-
-	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Project).call(this, props));
-
-	        var path = _this.props.location.pathname;
-	        var projectName = path.split('/')[2];
-	        var project = [];
-	        _projects2.default.map(function (proj, index) {
-	            if (proj.name === projectName) {
-	                project.push(proj);
-	            }
-	        });
-
-	        if (project[0] === undefined) {
-	            window.location = '/work';
-	        }
-	        _this.p = project[0];
-
-	        var projectIndex = _projects2.default.indexOf(project[0]);
-	        var projectCount = _projects2.default.length;
-
-	        if (projectIndex + 1 !== projectCount) {
-	            _this.next = _projects2.default[projectIndex + 1].name;
-	        } else {
-	            _this.next = _projects2.default[0].name;
-	        }
-	        return _this;
-	    }
-
-	    _createClass(Project, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {}
-	    }, {
-	        key: 'render',
-	        value: function render() {
-
-	            var images = this.p.images.map(function (img, index) {
-	                return _react2.default.createElement('img', { src: img.name, key: index });
-	            });
-
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'project-container' },
-	                _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/work' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'close-btn' },
-	                        'X'
-	                    )
-	                ),
-	                _react2.default.createElement('img', { src: this.p.main_image, className: 'main-image' }),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'container project-desc' },
-	                    _react2.default.createElement(
-	                        'h1',
-	                        null,
-	                        this.p.desc
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'project-images' },
-	                        images
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'next-project' },
-	                    _react2.default.createElement(
-	                        'a',
-	                        { href: '/project/' + this.next },
-	                        'Next'
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-
-	    return Project;
-	})(_react2.default.Component);
-
-	exports.default = Project;
-
-/***/ },
-/* 245 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	module.exports = [{
-	    name: "magelani",
-	    desc: "Timberland and Northface store in tbilisi, Website design and creation",
-	    main_image: "/images/work/timberland.jpg",
-	    images: [{ name: '/images/work/magelani/main.png' }, { name: '/images/work/magelani/navigation.png' }, { name: '/images/work/magelani/categories.png' }, { name: '/images/work/magelani/product.png' }, { name: '/images/work/magelani/footer.png' }]
-	}, {
-	    name: "citydubai",
-	    desc: "A comprehensive virtual city guide for Dubai, where locals and travelers can find complete information about restaurants, hotels, shops, activities etc. Make navigation through Dubai easy for locals and visitors.",
-	    main_image: "/images/work/citydubai.jpg",
-	    images: [{ name: '/images/work/citydubai/welcome.jpg' }, { name: '/images/work/citydubai/search.jpg' }, { name: '/images/work/citydubai/place.jpg' }]
-	}, {
-	    name: "cherrytea",
-	    desc: "A loyalty card that gives you a possibility to donate to your selected beneficier everyday and even get benefits for this",
-	    main_image: "/images/work/cherrytea.jpg",
-	    images: [{ name: '/images/work/cherrytea/welcome.png' }, { name: '/images/work/cherrytea/card.png' }, { name: '/images/work/cherrytea/form.png' }, { name: '/images/work/cherrytea/videos.png' }, { name: '/images/work/cherrytea/contact.png' }]
-	}, {
-	    name: "eloan",
-	    desc: "Georgian leader company in non-banking loans. to get a loan is very fast and easy, because everything from requesting a loan to get a loan performs online, without any need to wait.",
-	    main_image: "/images/work/eloan.jpg",
-	    images: [{ name: '/images/work/eloan/welcome.png' }, { name: '/images/work/eloan/how.png' }]
-	}, {
-	    name: "upme",
-	    desc: "Web and Mobile development company upme",
-	    main_image: "/images/work/upme.jpg",
-	    images: [{ name: '/images/work/upme/welcome.png' }, { name: '/images/work/upme/services.png' }, { name: '/images/work/upme/contact.png' }]
-	}, {
-	    name: "tbilisee",
-	    desc: "Easiest Way To Find Events, Restaurants, Cafe Bars, Movies, Theaters Clubs, Hotels, Fitness in Tbilisi, Georgia.",
-	    main_image: "/images/work/tbilisee.jpg",
-	    images: [{ name: '/images/work/tbilisee/home.jpg' }, { name: '/images/work/tbilisee/object.jpg' }]
-	}];
 
 /***/ }
 /******/ ]);

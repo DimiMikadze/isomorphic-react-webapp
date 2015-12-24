@@ -30,10 +30,6 @@ class Project extends React.Component {
         }
     }
 
-    componentDidMount() {
-
-    }
-
     render() {
 
         let images = this.p.images.map((img, index) => {
@@ -43,11 +39,17 @@ class Project extends React.Component {
         return (
             <div className="project-container">
 
+                <div className="main-image"
+                     style={{backgroundImage: 'url(' + this.p.main_image + ')',
+                     backgroundSize: 'cover',
+                     backgroundPosition: '50%' }}
+                >
+                </div>
+
                 <Link to="/work">
                     <div className="close-btn">X</div>
                 </Link>
 
-                <img src={this.p.main_image} className="main-image" />
 
                 <div className="container project-desc">
                     <h1>
@@ -67,7 +69,6 @@ class Project extends React.Component {
                 </div>
 
             </div>
-
         )
     }
 
