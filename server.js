@@ -6,8 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(express.static("views"));
 
-// Route handler for www requests
-app.get('*', function(req, res, next) {
+app.get('*', function(req, res) {
     if (req.headers.host.match(/^www/) !== null ) {
         res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
     } else {
