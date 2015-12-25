@@ -18,5 +18,5 @@ render((
             <Route path="*" component={Me} />
         </Route>
     </Router>
-), document.getElementById('react-container'));
+), document.getElementById('react-root'));
 
