@@ -1,6 +1,6 @@
 .skills {
 
-  color: #fff;
+  color: $white;
   text-align: center;
 
   @include md-bf-small() {
@@ -9,6 +9,7 @@
     margin-top: -18em;
     top: 50%;
     width: 100%;
+    font-size: .8em;
   }
 
   @include md-bf-medium() {

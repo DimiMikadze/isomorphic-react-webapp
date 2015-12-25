@@ -7,7 +7,7 @@ header {
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -31,12 +31,12 @@ header {
         }
 
         margin-left: 2em;
-        color: #ffffff;
+        color: $white;
 
         &:hover {
-          border-bottom: 1px dotted #ffffff;
+          border-bottom: 1px dotted $white;
           text-decoration: none;
-          color: #ffffff;
+          color: $white;
         }
 
       }

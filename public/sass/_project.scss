@@ -1,6 +1,6 @@
 .project-container {
 
-  background-color: #fff;
+  background-color: $white;
   z-index: 1000000 !important;
 
   img {
@@ -11,7 +11,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: $white;
   margin: 0;
   padding: 0;
 
@@ -19,12 +19,12 @@
     position: fixed;
     top: .5em;
     right: .5em;
-    color: #fff;
+    color: $white;
     font-size: 3em;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px $black;
 
     &:hover {
-      text-shadow: 1px 1px 3px #000;
+      text-shadow: 1px 1px 3px $black;
     }
   }
 
@@ -41,8 +41,8 @@
       margin-top: 4em;
     }
 
-    background-color: #fff;
-    color: #8c8c8c;
+    background-color: $white;
+    color: $light-gray;
   }
 
   .project-images  {
@@ -63,9 +63,9 @@
 
     a {
       font-size: 1em;
-      color: #8c8c8c;
+      color: $light-gray;
       &:hover {
-        color: #3388cc;
+        color: $light-blue;
       }
     }
 
@@ -85,9 +85,9 @@
   a {
     display: block;
     width: 100%;
-    color: #000;
+    color: $black;
     &:hover {
-      color: #8c8c8c;
+      color: $light-gray;
     }
   }
 }

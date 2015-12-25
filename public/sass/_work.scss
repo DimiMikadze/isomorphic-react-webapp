@@ -84,7 +84,7 @@
 
     text-align: center;
     color: transparent;
-    margin-top: 3em 0 0 0;
+    margin: 3em 0 0 0;
     padding: 0;
 
     li {
@@ -93,7 +93,7 @@
 
       button {
         border: 0;
-        background-color: #c0c0c0;
+        background-color: $light-gray;
         padding: 0;
         height: 1em;
         width: 1em;
@@ -103,7 +103,7 @@
 
     li.slick-active {
       button {
-        background-color: #fff;
+        background-color: $white;
       }
     }
   }
@@ -114,7 +114,7 @@
   }
 
   .slider-item > .caption {
-    color: #fff;
+    color: $white;
     text-align: center;
     position: absolute;
     width: 100%;

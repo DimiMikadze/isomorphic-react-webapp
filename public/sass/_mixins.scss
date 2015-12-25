@@ -168,7 +168,14 @@ $font-dir: "/css/fonts/";
 }
 
 /* RGBA background */
-@mixin background-opacity($color, $opacity: 0.3) {
+@mixin background-rgba($color, $opacity: 0.3) {
   background: $color; /* The Fallback */
   background: rgba($color, $opacity);
 }
+
+/* Rgba */
+@mixin background-opacity($color, $opacity: 0.3) {
+  box-shadow: inset 0 0 0 1000px rgba($color, $opacity);
+}
+
+/* */

@@ -1,9 +1,9 @@
 .lets-talk, .github {
-  color: #fff;
+  color: $white;
   a {
-    color: #cecece;
+    color: $dark-white;
     &:hover {
-      color: #fff;
+      color: $white;
     }
   }
 }
