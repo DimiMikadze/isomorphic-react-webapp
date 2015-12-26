@@ -45,13 +45,16 @@ class Project extends React.Component {
                      backgroundSize: 'cover',
                      backgroundPosition: '50%' }}
                 >
+                    <a href="#project-desc">
+                        <div className="arrow-down"></div>
+                    </a>
                 </div>
 
                 <Link to="/">
                     <div className="close-btn">X</div>
                 </Link>
 
-                <div className="project-desc">
+                <div className="project-desc" id="project-desc">
 
                     <div className="container">
                         <h1>
