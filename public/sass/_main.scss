@@ -4,11 +4,9 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: $body-back;
-  background: url('../../images/smoke.jpg');
+  background-color: $wrapper-back;
   background-size: cover;
   background-repeat: no-repeat;
-  @include background-opacity($body-shaddow, 0.3);
   color: $white;
 }
 
@@ -52,21 +50,15 @@ a, button {
   left: 0;
   top: 0;
   margin: 0;
+  height: 100%;
+  background-color: $white;
 
   @include md-bf-small() {
     padding: 2em;
   }
-  @include md-small() {
-    padding: 2em;
-  }
-  @include md-xsmall() {
+
+  @include md-bf-medium() {
     padding: 0;
-  }
-
-  @include md-bf-small() {
-    background-attachment: fixed;
-    background-position: center;
-    height: 100%;
   }
 
   .wrapper {
@@ -74,13 +66,7 @@ a, button {
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: inherit;
-
-    @include background-opacity($body-shaddow, 0.3);
-
-    @include md-af-xsmall() {
-      border: 1px solid $wrapper-border;
-    }
+    background-color: $wrapper-back;
 
   }
 
