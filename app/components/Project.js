@@ -47,7 +47,7 @@ class Project extends React.Component {
                 >
                 </div>
 
-                <Link to="/work">
+                <Link to="/">
                     <div className="close-btn">X</div>
                 </Link>
 
