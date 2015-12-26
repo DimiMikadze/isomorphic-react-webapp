@@ -5,6 +5,23 @@ import projects from '../utils/projects';
 
 class Work extends React.Component {
 
+    orderRandom(array) {
+
+        let currentIndex = array.length, temporaryValue, randomIndex;
+
+        while (0 !== currentIndex) {
+
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    }
+
     render() {
 
         let settings = {
@@ -13,14 +30,16 @@ class Work extends React.Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: false,
             draggable: true
         };
 
-        let images = projects.map((p, index) => {
+        let randomProjects = this.orderRandom(projects);
+
+        let images = randomProjects.map((p, index) => {
             return (
-                <Link to={`/project/${p.name}`} >
-                    <div className="slider-item" key={index}
+                <Link to={`/project/${p.name}`} key={index}>
+                    <div className="slider-item"
                          style={{backgroundImage: 'url(../' + p.main_image + ')',
                          backgroundSize: 'cover',
                          backgroundPosition: '50%' }}

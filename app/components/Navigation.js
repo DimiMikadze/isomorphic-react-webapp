@@ -20,12 +20,12 @@ class Navigation extends React.Component {
                     <ul className="pull-right">
                         <li>
                             <IndexLink to="/" activeClassName="active">
-                                Me
+                                Work
                             </IndexLink>
                         </li>
                         <li>
-                            <Link to="/work" activeClassName="active">
-                                Work
+                            <Link to="/me" activeClassName="active">
+                                Me
                             </Link>
                         </li>
                         <li>

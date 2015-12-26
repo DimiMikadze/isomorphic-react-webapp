@@ -11,7 +11,7 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 render((
     <Router history={createBrowserHistory()}>
         <Route path="/" component={Main}>
-            <IndexRoute component={Me} />
+            <IndexRoute component={Work} />
             <Route path="work" component={Work} />
             <Route path="/project/:project" component={Project} />
             <Route path="skills" component={Skills} />
