@@ -22,6 +22,10 @@ class Work extends React.Component {
         return array;
     }
 
+    componentDidMount() {
+        document.getElementById('loading').style.display = 'none';
+    }
+
     render() {
 
         let settings = {
@@ -51,6 +55,7 @@ class Work extends React.Component {
 
         return (
             <div className="work-container">
+                <div id="loading"></div>
                 <SlickSlider {...settings}>
                     {images}
                 </SlickSlider>
