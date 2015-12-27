@@ -22,10 +22,6 @@ class Work extends React.Component {
         return array;
     }
 
-    componentDidMount() {
-        document.getElementById('loading').style.display = 'none';
-    }
-
     render() {
 
         let settings = {
