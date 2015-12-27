@@ -51,7 +51,6 @@ class Work extends React.Component {
 
         return (
             <div className="work-container">
-                <div id="loading"></div>
                 <SlickSlider {...settings}>
                     {images}
                 </SlickSlider>
