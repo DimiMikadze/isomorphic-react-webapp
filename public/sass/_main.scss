@@ -55,6 +55,7 @@ a, button {
 
   @include md-bf-small() {
     padding: 2em;
+    overflow: hidden;
   }
 
   @include md-bf-medium() {
