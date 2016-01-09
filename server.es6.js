@@ -36,6 +36,7 @@ app.get('*', (req, res) => {
             res.sendStatus(404);
         }
     });
+
 });
 
 let port = process.env.PORT || '3000';
