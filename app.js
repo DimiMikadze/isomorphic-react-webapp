@@ -24,6 +24,11 @@ app.use(express.static("views"));
 //});
 
 app.get('*', (req, res) => {
+
+    if (req.headers.host.match(/^www/) !== null ) {
+        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    }
+
     match({ routes, location: req.url }, (err, redirectLocation, props) => {
         if (err) {
             res.status(500).send(err.message);
