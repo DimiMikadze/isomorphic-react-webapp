@@ -27,9 +27,7 @@ app.get('*', (req, res) => {
             res.redirect(302, redirectLocation.pathname + redirectLocation.search);
         } else if (props) {
             const content = renderToString(<RoutingContext {...props} />);
-
             res.render('index', { content })
-
         } else {
             res.sendStatus(404);
         }
@@ -39,8 +37,8 @@ app.get('*', (req, res) => {
 let port = process.env.PORT || '3000';
 
 const server = app.listen(port, function() {
-    var host = server.address().address;
-    var port = server.address().port;
+    let host = server.address().address;
+    let port = server.address().port;
 
     console.log("app listening on " + host + " " + port);
 });

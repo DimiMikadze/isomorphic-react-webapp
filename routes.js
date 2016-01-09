@@ -1,8 +1,8 @@
-import Me from './app/components/Me';
-import Main from './app/components/Main';
-import Work from './app/components/Work';
-import Skills from './app/components/Skills';
-import Project from './app/components/Project';
+import Me from './client/components/Me';
+import Main from './client/components/Main';
+import Work from './client/components/Work';
+import Skills from './client/components/Skills';
+import Project from './client/components/Project';
 
 const routes = {
     path: '',
