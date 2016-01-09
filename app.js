@@ -15,28 +15,13 @@ app.set("views", __dirname + "/views");
 app.use(express.static("public"));
 app.use(express.static("views"));
 
-//app.get('*', function(req, res) {
-//    if (req.headers.host.match(/^www/) !== null ) {
-//        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
-//    } else {
-//        res.render('index.html');
-//    }
-//});
-
-app.get('*', (req, res, next) => {
-
-    if (req.headers.host.match(/^www/) !== null ) {
-        res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
-    } else {
-        next();
-    }
-
-    console.log('REQ: ' + req.headers.host);
-    console.log('REQ HEADERS: ' + req.headers);
-    console.log('REQ URL: ' + req.url);
+app.get('*', (req, res) => {
 
     match({ routes, location: req.url }, (err, redirectLocation, props) => {
-        if (err) {
+
+        if (req.headers.host.match(/^www/) !== null ) {
+            res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+        } else if (err) {
             res.status(500).send(err.message);
         } else if (redirectLocation) {
             res.redirect(302, redirectLocation.pathname + redirectLocation.search);
