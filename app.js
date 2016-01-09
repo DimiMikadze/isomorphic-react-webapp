@@ -29,6 +29,10 @@ app.get('*', (req, res) => {
         res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
     }
 
+    console.log('REQ: ' + req);
+    console.log('REQ HEADERS: ' + req.headers);
+    console.log('REQ URL: ' + req.url);
+
     match({ routes, location: req.url }, (err, redirectLocation, props) => {
         if (err) {
             res.status(500).send(err.message);
