@@ -1,4 +1,4 @@
-# Isomorphic/Universal React Web App Example
+# Isomorphic/Universal React Web App
 
 Shared JavaScript Web Application that runs on both the client & server using React and Node/Express.
 
@@ -44,6 +44,12 @@ Sass
 
 ````
 gulp sass:watch
+````
+
+Compress scripts
+
+````
+gulp compress
 ````
 
 ## License
