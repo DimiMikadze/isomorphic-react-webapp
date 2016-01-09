@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     {
         name: "magelani",
         desc: "Timberland and Northface store in Tbilisi, Georgia.",
