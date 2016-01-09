@@ -15,6 +15,10 @@ app.set("views", __dirname + "/views");
 app.use(express.static("public"));
 app.use(express.static("views"));
 
+app.get('/sitemap.xml', (req, res) => {
+    res.render('sitemap.xml');
+});
+
 app.get('*', (req, res) => {
 
     match({ routes, location: req.url }, (err, redirectLocation, props) => {
