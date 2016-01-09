@@ -23,13 +23,15 @@ app.use(express.static("views"));
 //    }
 //});
 
-app.get('*', (req, res) => {
+app.get('*', (req, res, next) => {
 
     if (req.headers.host.match(/^www/) !== null ) {
         res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else {
+        next();
     }
 
-    console.log('REQ: ' + req);
+    console.log('REQ: ' + req.headers.host);
     console.log('REQ HEADERS: ' + req.headers);
     console.log('REQ URL: ' + req.url);
 
