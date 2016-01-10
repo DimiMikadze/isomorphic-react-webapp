@@ -10,3 +10,5 @@ ReactDOM.render(
     <Router routes={routes} history={createBrowserHistory()} />,
     document.getElementById('react-root')
 );
+
+window.onload = function(){ document.getElementById("loading").style.display = "none" }
