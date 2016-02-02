@@ -16,13 +16,17 @@ var _routes = require('../shared/routes');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var development = process.env.NODE_ENV;
+
+console.log(development);
+
 var app = (0, _express2.default)();
 
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
-app.set("views", __dirname + "../dist/views");
+app.set("views", __dirname + "/../../dist/views");
 
-app.use(_express2.default.static("../dist"));
+app.use(_express2.default.static("dist"));
 
 app.get('/sitemap.xml', function (req, res) {
     res.render('sitemap.xml');
