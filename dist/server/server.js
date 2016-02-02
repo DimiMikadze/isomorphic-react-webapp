@@ -12,7 +12,7 @@ var _server = require('../../node_modules/react-dom/server');
 
 var _reactRouter = require('react-router');
 
-var _routes = require('../shared/routes');
+var _routes = require('../../shared/routes');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

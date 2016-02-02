@@ -11,8 +11,8 @@ module.exports = {
                 test: /\.jsx?$/,
                 include: [
                     path.resolve(__dirname, "src/client"),
-                    path.resolve(__dirname, "src/shared"),
-                    path.resolve(__dirname, "src/utils")
+                    path.resolve(__dirname, "src/utils"),
+                    path.resolve(__dirname, "shared")
                 ],
                 loader: 'babel',
                 query: {
