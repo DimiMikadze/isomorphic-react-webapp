@@ -11,7 +11,6 @@ module.exports = {
                 test: /\.jsx?$/,
                 include: [
                     path.resolve(__dirname, "src/client"),
-                    path.resolve(__dirname, "src/components"),
                     path.resolve(__dirname, "src/shared"),
                     path.resolve(__dirname, "src/utils")
                 ],

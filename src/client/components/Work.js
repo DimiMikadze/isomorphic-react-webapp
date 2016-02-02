@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { projects } from '../utils/projects';
+import { projects } from '../../utils/projects';
 
 class Work extends React.Component {
 

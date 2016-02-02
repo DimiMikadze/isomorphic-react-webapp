@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { someProjects } from '../utils/projects';
-import testimonials from '../utils/testimonials';
+import { someProjects } from '../../utils/projects';
+import testimonials from '../../utils/testimonials';
 
 class Home extends React.Component {
 
