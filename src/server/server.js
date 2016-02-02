@@ -1,5 +1,9 @@
 import express from 'express';
 
+let development = process.env.NODE_ENV;
+
+console.log(development);
+
 import React from 'react';
 import { renderToString } from '../../node_modules/react-dom/server';
 import { match, RoutingContext } from 'react-router';
@@ -8,9 +12,7 @@ import { routes } from '../shared/routes';
 
 const app = express();
 
-let development = process.env.NODE_ENV;
 
-console.log(development);
 
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
