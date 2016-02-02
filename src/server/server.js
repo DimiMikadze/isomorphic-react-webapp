@@ -8,6 +8,10 @@ import { routes } from '../shared/routes';
 
 const app = express();
 
+let development = process.env.NODE_ENV;
+
+console.log(development);
+
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
 app.set("views", __dirname + "/../../dist/views");

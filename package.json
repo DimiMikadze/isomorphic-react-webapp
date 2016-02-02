@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon src/server/server.js --exec babel-node",
     "build": "babel src/server -d dist/server",
-    "server": "pm2 start dist/server.js"
+    "server": "pm2 start dist/server/server.js"
   },
   "babel": {
     "presets": [
