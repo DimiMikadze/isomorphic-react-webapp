@@ -1,0 +1,45 @@
+.footer-container {
+
+  clear: both;
+  padding: 5em 0;
+  text-align: center;
+  img {
+    width: 2em;
+    @include transition(all 0.3s ease);
+
+    &:hover {
+      @include transition-scale(scale(1.05));
+    }
+  }
+
+  .lets-talk, .github {
+
+    a {
+      color: darken($dark-white, 30);
+      &:hover {
+        color: $light-black;
+      }
+    }
+  }
+
+  .lets-talk a {
+    margin: 0 0.5em;
+  }
+
+  .lets-talk {
+    h3 {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+  }
+
+  .github {
+    margin-top: 3em;
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+  }
+
+}

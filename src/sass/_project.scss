@@ -1,0 +1,91 @@
+.project-container {
+
+  background-color: $white;
+  z-index: 1000000 !important;
+
+  img {
+    @include background-image('loading.gif');
+    background-position: center;
+  }
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  .close-btn {
+    position: fixed;
+    top: .5em;
+    right: .5em;
+    color: $light-black;
+    font-size: 3em;
+
+    &:hover {
+      color: darken($light-black, 20);
+    }
+  }
+}
+
+.project-desc {
+
+  width: 100%;
+
+  h1 {
+    margin-top: 4em;
+  }
+
+  h3 {
+    @include font-size(30px);
+  }
+
+  p {
+    font-weight: bold;
+    @include font-size(30px);
+  }
+
+  background-color: $white;
+  color: $light-black;
+}
+
+.project-images  {
+
+  text-align: center;
+  margin-top: 6em;
+
+  img {
+    width: 100%;
+    margin-top: 3em;
+  }
+}
+
+.project-link {
+  margin-top: 8em;
+  text-align: center;
+
+  a {
+    font-size: 1em;
+    color: $light-black;
+    &:hover {
+      color: $light-blue;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.next-project {
+  padding: 2em 0;
+  width: 100%;
+  font-size: 4em;
+  text-align: center;
+
+  a {
+    display: block;
+    width: 100%;
+    color: $black;
+    &:hover {
+      color: $light-black;
+    }
+  }
+}

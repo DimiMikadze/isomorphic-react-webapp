@@ -1,0 +1,115 @@
+.skills-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome-skills {
+
+  overflow: hidden;
+  text-align: center;
+  background-color: $red;
+  padding: 3em 0;
+
+  h1 {
+
+    font-weight: lighter;
+    padding: 0 6em;
+    @include md-bf-medium() {
+      padding: 0 1em;
+    }
+    font-size: 1.9em;
+    color: $white;
+  }
+}
+
+.skills-set-container {
+  background-color: $light-gray;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-container {
+  padding: 4em 0;
+}
+
+.skill-wrapper {
+  margin-bottom: 3em;
+  h3 {
+    text-align: center;
+    font-weight: lighter;
+    @include font-size(30px);
+  }
+}
+
+.skill {
+
+  border-radius: 1em;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+  overflow: hidden;
+  margin-top: 2em;
+
+  .title {
+    height: 10em;
+    line-height: 10em;
+    text-align: center;
+    margin-top: -1.3em;
+  }
+
+  .title.javascript {
+    background-color: $js-yellow;
+  }
+
+  .title.database {
+    background-color: $db-red;
+    color: $white;
+    height: 11.3em;
+
+    img {
+      width: 4em;
+      margin-top: 3em;
+    }
+  }
+
+  .title.design {
+    background-color: $design-orange;
+    color: $white;
+
+    height: 11.3em;
+
+    img {
+      width: 4em;
+      margin-top: 3em;
+    }
+  }
+
+  .title.hosting {
+    background-color: $hosting-blue;
+    color: $white;
+
+    height: 11.3em;
+
+    img {
+      width: 4em;
+      margin-top: 3em;
+    }
+  }
+
+  .title.php {
+    background-color: $php-purple;
+    color: $white;
+  }
+
+  .desc {
+    background-color: $white;
+
+    ul {
+      margin: 0;
+      padding: 1em 0;
+
+      li {
+        margin-left: 2em;
+      }
+    }
+  }
+
+}

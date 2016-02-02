@@ -1,13 +1,20 @@
+var path = require('path');
+
 module.exports = {
-    entry: "./client.js",
+    entry: "./src/client/client.js",
     output: {
-        filename: "./public/js/bundle.js"
+        filename: "./dist/js/bundle.js"
     },
     module: {
         loaders: [
             {
                 test: /\.jsx?$/,
-                exclude: [/node_modules/, /public/, /views/],
+                include: [
+                    path.resolve(__dirname, "src/client"),
+                    path.resolve(__dirname, "src/components"),
+                    path.resolve(__dirname, "src/shared"),
+                    path.resolve(__dirname, "src/utils")
+                ],
                 loader: 'babel',
                 query: {
                     presets: ['es2015', 'react']

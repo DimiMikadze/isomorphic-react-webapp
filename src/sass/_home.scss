@@ -1,0 +1,160 @@
+.home-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome-home {
+
+  overflow: hidden;
+  text-align: center;
+  background-color: $purple;
+  padding: 3em 0 5em 0;
+  margin-bottom: 4em;
+
+  .about-me {
+
+    text-align: center;
+    max-width: 1300px;
+    margin: 0 auto;
+
+    h1 {
+      font-weight: lighter;
+      padding: 0 6em;
+      @include md-bf-medium() {
+        padding: 0 1em;
+      }
+      font-size: 1.9em;
+      color: $white;
+    }
+  }
+
+  .go-to-work {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 2em;
+
+    a {
+      color: $light-black;
+      background-color: $white;
+      padding: 0.4em 2em;
+      border-radius: 0.2em;
+      @include font-size(34px);
+      &:hover {
+        background-color: darken($white, 3);
+      }
+    }
+  }
+}
+
+.some-work {
+
+  text-align: center;
+  padding-bottom: 6em;
+}
+
+h2 {
+  font-weight: bold;
+  @include font-size(35px);
+}
+
+.home-work-container {
+  margin-top: 5em;
+  overflow: hidden;
+}
+
+.work {
+
+  position: relative;
+  overflow: hidden;
+  height: 22em;
+  margin-bottom: 2em;
+
+  @include md-medium() {
+    height: 18em;
+  }
+  @include md-small() {
+    height: 18em;
+  }
+  @include md-xsmall() {
+    height: auto
+  }
+
+  h3 {
+    position: absolute;
+    left: 2em;
+    top: 0;
+    color: $white;
+    @include font-size(30px);
+    text-shadow: 0 0 10px  $light-black
+  }
+
+  p {
+    position: absolute;
+    left: 3em;
+    top: 3em;
+    color: $white;
+    @include font-size(20px);
+    text-shadow: 0 0 10px  $light-black
+  }
+
+  .main-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .github {
+    position: absolute;
+    top: 1.8em;
+    right: 2em;
+  }
+
+}
+
+.go-to-projects {
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 2em;
+  @include transition(all 1s ease);
+
+  a {
+    color: $white;
+    background-color: $green;
+    padding: 0.4em 2em;
+    border-radius: 0.2em;
+    @include font-size(34px);
+    &:hover {
+      background-color: darken($green, 5);
+    }
+  }
+}
+
+.testimonials-container {
+
+  background-color: $light-gray;
+  padding: 5em 0;
+
+  .testimonials {
+
+    text-align: center;
+    h2 {
+      margin-bottom: 3em;
+      @include font-size(35px);
+    }
+
+    .testimonial {
+
+      .t-name {
+        color: $purple;
+      }
+
+      @include md-xsmall() {
+        margin-bottom: 3em;
+      }
+    }
+
+    img {
+      width: 8em;
+      margin-bottom: 2em;
+    }
+  }
+}

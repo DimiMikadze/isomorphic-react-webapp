@@ -3,18 +3,18 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 
 gulp.task('sass', function () {
-    gulp.src('./public/sass/bundle.scss')
+    gulp.src('./src/sass/bundle.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('compress', function() {
-    return gulp.src('./public/js/bundle.js')
+    return gulp.src('./dist/js/bundle.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./public/js/'));
+        .pipe(gulp.dest('./dist/js/'));
 });
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./public/sass/**/*.scss', ['sass']);
+    gulp.watch('./src/sass/**/*.scss', ['sass']);
 });

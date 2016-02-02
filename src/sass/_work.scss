@@ -1,0 +1,33 @@
+.work-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome-work {
+
+  overflow: hidden;
+  text-align: center;
+  background-color: $green;
+  padding: 3em 0;
+
+  h1 {
+    font-weight: lighter;
+    padding: 0 6em;
+    @include md-bf-medium() {
+      padding: 0 1em;
+    }
+    font-size: 1.9em;
+    color: $white;
+  }
+}
+
+.work-wrapper {
+  background-color: $light-gray;
+  padding: 4em 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3em;
+    font-weight: lighter;
+  }
+}

@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,300);
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+  color: $light-black;
+}
+
+a:visited, a:after, a:active, a:focus, a:checked, a:enabled, a:link {
+  text-decoration: none !important;
+}
+
+a, button {
+  outline: none !important;
+}
+
+@include md-bf-medium() {
+  .hide-bf-small {
+    display: none;
+  }
+}
+
+@include md-bf-small() {
+  .hide-bf-medium {
+    display: none;
+  }
+}
+
+#loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: $white;
+  color: $black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+  @include background-image('preloader.gif', 50% 50%);
+}

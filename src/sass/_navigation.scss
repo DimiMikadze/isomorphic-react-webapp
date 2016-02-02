@@ -1,0 +1,52 @@
+header {
+
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  height: 6em;
+
+  .logo {
+
+    margin-top: 1.8em;
+
+    a {
+      text-decoration: none;
+      color: $light-black;
+      @include font-size(40px);
+    }
+  }
+
+  nav {
+    margin-top: 1.3em;
+
+    li {
+      display: inline;
+
+      @include md-bf-medium() {
+        &:last-of-type {
+          margin-right: 1em;
+        }
+      }
+
+      a {
+        font-size: 1.3em;
+        margin-left: 2em;
+        color: $light-black;
+
+        @include md-xsmall() {
+          margin-left: 1em;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: $black;
+        }
+
+      }
+    }
+
+    .active {
+      color: $purple;
+    }
+  }
+}
