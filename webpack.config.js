@@ -12,7 +12,7 @@ module.exports = {
                 include: [
                     path.resolve(__dirname, "src/client"),
                     path.resolve(__dirname, "src/utils"),
-                    path.resolve(__dirname, "shared")
+                    path.resolve(__dirname, "src/shared")
                 ],
                 loader: 'babel',
                 query: {

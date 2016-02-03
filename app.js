@@ -1,16 +1,16 @@
 import express from 'express';
 
 import React from 'react';
-import { renderToString } from '../../node_modules/react-dom/server';
+import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
 
-import { routes } from '../../shared/routes';
+import { routes } from './src/shared/routes';
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.engine("html", require("ejs").renderFile);
-app.set("views", __dirname + "/../../static/views");
+app.set("views", __dirname + "/static/views");
 
 app.use(express.static("static"));
 app.use(express.static("dist"));

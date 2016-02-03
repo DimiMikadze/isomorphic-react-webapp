@@ -1,10 +1,10 @@
-var Home = require('../src/client/components/Home');
-var Main = require('../src/client/components/Main');
-var Work = require('../src/client/components/Work');
-var Skills = require('../src/client/components/Skills');
-var Project = require('../src/client/components/Project');
+import Home from '../client/components/Home';
+import Main from '../client/components/Main';
+import Work from '../client/components/Work';
+import Skills from '../client/components/Skills';
+import Project from '../client/components/Project';
 
-var routes = {
+const routes = {
     path: '',
     component: Main,
     childRoutes: [
@@ -31,4 +31,4 @@ var routes = {
     ]
 };
 
-export var routes = routes;
+export { routes };
