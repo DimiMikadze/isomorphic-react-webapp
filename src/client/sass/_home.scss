@@ -34,6 +34,7 @@
     margin-top: 2em;
 
     a {
+      @include transition(background-color 0.5s ease);
       color: $light-black;
       background-color: $white;
       padding: 0.4em 2em;
@@ -79,6 +80,11 @@ h2 {
     height: auto
   }
 
+  &:hover {
+    @include transition(opacity 0.5s);
+    opacity: 0.9;
+  }
+
   h3 {
     position: absolute;
     left: 2em;
@@ -114,7 +120,6 @@ h2 {
   font-size: 1.6em;
   text-align: center;
   margin-top: 2em;
-  @include transition(all 1s ease);
 
   a {
     color: $white;
@@ -122,6 +127,8 @@ h2 {
     padding: 0.4em 2em;
     border-radius: 0.2em;
     @include font-size(34px);
+    @include transition(background-color 0.5s ease);
+
     &:hover {
       background-color: darken($green, 5);
     }

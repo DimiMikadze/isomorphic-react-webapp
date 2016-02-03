@@ -31,3 +31,34 @@
     font-weight: lighter;
   }
 }
+
+.your-project {
+
+  background-color: $db-red;
+  overflow: hidden;
+  height: 22em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: $white;
+  line-height: 18em;
+  position: relative;
+  @include transition(background-color 0.5s ease);
+
+  @include md-medium() {
+    height: 18em;
+    line-height: 14em;
+  }
+  @include md-small() {
+    height: 18em;
+    line-height: 14em;
+  }
+
+  h3 {
+    text-align: center;
+    @include font-size(40px);
+  }
+
+  &:hover {
+    background-color: darken($db-red, 5);
+  }
+}

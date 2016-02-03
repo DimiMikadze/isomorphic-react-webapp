@@ -115,8 +115,10 @@ export const projects = [
         main_image: "/images/work/mblog.jpg",
         github: "https://github.com/DimitriMikadze/Mean-Blog",
         images: [
-            { name: '/images/work/carpediem/home.png' },
-            { name: '/images/work/carpediem/services.png' }
+            { name: '/images/work/meanblog/blog1.jpg' },
+            { name: '/images/work/meanblog/blog3.jpg' },
+            { name: '/images/work/meanblog/blog4.jpg' },
+            { name: '/images/work/meanblog/blog2.jpg' }
         ]
     },
     {
@@ -127,38 +129,22 @@ export const projects = [
         main_image: "/images/work/guessfamouspeople.jpg",
         github: "https://github.com/DimitriMikadze/react-native-game",
         images: [
-            { name: '/images/work/guessfamouspeople/Choose.jpg' },
-            { name: '/images/work/guessfamouspeople/Finish.jpg' },
-            { name: '/images/work/guessfamouspeople/Game.jpg' },
-            { name: '/images/work/guessfamouspeople/Start.jpg' }
+            { name: '/images/work/guessfamouspeople/gfp11.jpg' },
+            { name: '/images/work/guessfamouspeople/gfp22.jpg' },
+            { name: '/images/work/guessfamouspeople/gfp33.jpg' }
         ]
     },
     {
         name: "Vanilla Slideshow",
         desc: "Vanilla Javascript CSS3 Fullscreen Responsive Slideshow",
         job: "Development",
-        url: "https://github.com/DimitriMikadze/vanilla-slideshow",
+        url: "http://upmelab.com/demos/vanilla-slideshow",
         main_image: "/images/work/mvanillaslideshow.jpg",
         github: "https://github.com/DimitriMikadze/vanilla-slideshow",
         images: [
-            { name: '/images/work/guessfamouspeople/Choose.jpg' },
-            { name: '/images/work/guessfamouspeople/Finish.jpg' },
-            { name: '/images/work/guessfamouspeople/Game.jpg' },
-            { name: '/images/work/guessfamouspeople/Start.jpg' }
-        ]
-    },
-    {
-        name: "Vanilla Helpers",
-        desc: "Vanilla Javascript Helper Functions, Ajax, Effects, DOM manipulation, Styles, Utilities, Without jQuery.",
-        job: "Development",
-        url: "https://github.com/DimitriMikadze/vanilla-helpers",
-        main_image: "/images/work/mvanillahelpers.jpg",
-        github: "https://github.com/DimitriMikadze/vanilla-helpers",
-        images: [
-            { name: '/images/work/guessfamouspeople/Choose.jpg' },
-            { name: '/images/work/guessfamouspeople/Finish.jpg' },
-            { name: '/images/work/guessfamouspeople/Game.jpg' },
-            { name: '/images/work/guessfamouspeople/Start.jpg' }
+            { name: '/images/work/slideshow/slideshow11.jpg' },
+            { name: '/images/work/slideshow/slideshow22.jpg' },
+            { name: '/images/work/slideshow/slideshow33.jpg' }
         ]
     }
 ];

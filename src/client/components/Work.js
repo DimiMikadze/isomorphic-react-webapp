@@ -24,15 +24,26 @@ class Work extends React.Component {
             <div className="work-container">
                 <div className="welcome-work">
                     <div className="container col-sm-12">
-                        <h1>Below are a few selected pieces of work</h1>
+                        <h1>Work</h1>
                     </div>
                 </div>
 
                 <div className="work-wrapper">
                     <div className="container">
+
+                        <h2>Below are a few selected pieces of work</h2>
+
                         {work}
+                        <a href="mailto:dimitrimikadze@gmail.co?subject=I want awesome app">
+                            <div className="col-md-4 col-sm-6 col-xs-12">
+                                <div className="your-project">
+                                    <h3>Your Project Next</h3>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
             </div>
         )
     }

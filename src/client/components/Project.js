@@ -64,7 +64,7 @@ class Project extends React.Component {
                         </div>
 
                         <div className="next-project">
-                            <a href={`/work/${this.next}`} >
+                            <a href={`/work/${this.next.replace(/ /g, '-')}`} >
                                 Next Work
                             </a>
                         </div>

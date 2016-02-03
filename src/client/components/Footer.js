@@ -7,25 +7,22 @@ class Footer extends React.Component {
             <div className="container footer-container">
                 <div className="lets-talk">
                     <h3>Lets Talk</h3>
-                    <a href="mailto:dimitrimikadze@gmail.com">
-                        <img src="/images/email.png" alt="Email" title="Email"/>
+                    <a href="mailto:dimitrimikadze@gmail.com" className="email">
+                        <i className="fa fa-envelope"></i>
                     </a>
-                    <a href="https://www.facebook.com/Ditmens" target="_blank">
-                        <img src="/images/facebook.png" alt="Facebook" title="Facebook"/>
+                    <a href="https://www.facebook.com/Ditmens" target="_blank" className="facebook">
+                        <i className="fa fa-facebook"></i>
                     </a>
-                    <a href="https://twitter.com/DimitriMikadze" target="_blank">
-                        <img src="/images/twitter.png" alt="Twitter" title="Twitter"/>
+                    <a href="https://twitter.com/DimitriMikadze" target="_blank" className="twitter">
+                        <i className="fa fa-twitter"></i>
                     </a>
-                    <a href="https://www.linkedin.com/profile/view?id=AAMAABSP054BMC3w5ePc2YYXGPRJsMWdAG3H6Fs&trk=hp-identity-name" target="_blank">
-                        <img src="/images/linkedin.png" alt="Linkedin" title="Linkedin"/>
+                    <a href="https://www.linkedin.com/profile/view?id=AAMAABSP054BMC3w5ePc2YYXGPRJsMWdAG3H6Fs&trk=hp-identity-name" target="_blank" className="linkedin">
+                        <i className="fa fa-linkedin"></i>
                     </a>
-                </div>
-
-                <div className="github">
-                    <h3>Find me on Github</h3>
-                    <a href="https://github.com/DimitriMikadze" target="_blank">
-                        <img src="/images/github.png" alt="Github" title="Github"/>
+                    <a href="https://github.com/DimitriMikadze" target="_blank" className="github">
+                        <i className="fa fa-github"></i>
                     </a>
+                    <p>&copy; Dimitri Mikadze</p>
                 </div>
             </div>
         )
