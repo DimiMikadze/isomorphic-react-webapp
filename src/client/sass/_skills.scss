@@ -113,3 +113,12 @@
   }
 
 }
+
+.go-to-projects {
+
+  a {
+    @include md-xsmall() {
+      padding: 0.4em 0.5em;
+    }
+  }
+}
