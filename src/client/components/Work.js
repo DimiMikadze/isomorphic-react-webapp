@@ -14,7 +14,7 @@ class Work extends React.Component {
                         <h3>{p.name}</h3>
                         <p>{p.job}</p>
                         <img src={`${p.main_image}`} alt={`${p.name}`} className="main-image"/>
-                        { p.github && <img className="github" src="/images/github_icon.png"/> }
+                        { p.github && <img className="github" src="/images/github_icon.png" alt="github"/> }
                     </div>
                 </Link>
             )

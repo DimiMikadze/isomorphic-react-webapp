@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>http://dimitrimikadze.com/</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/skills</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Cherrytea</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Magelani</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Eloan</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Upme</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Cms</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/CityDubai</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Tbilisee</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Carpediem</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Mean-Blog</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Guess-Famous-People</loc>
+    </url>
+    <url>
+        <loc>http://dimitrimikadze.com/work/Vanilla-Slideshow</loc>
+    </url>
+</urlset>
