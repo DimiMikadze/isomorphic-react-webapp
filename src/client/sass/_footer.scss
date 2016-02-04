@@ -49,6 +49,10 @@
       &:hover {
         color: $light-black;
       }
+
+      @include md-xsmall() {
+        @include font-size(20px);
+      }
     }
 
     h3 {

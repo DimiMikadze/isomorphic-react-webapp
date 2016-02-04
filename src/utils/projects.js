@@ -111,7 +111,7 @@ export const projects = [
         name: "Mean Blog",
         desc: "Blog using Nodejs, Expressjs, Angularjs and Mongodb. MEAN Javascript Fullstack application",
         job: "Development",
-        url: "https://github.com/DimitriMikadze/Mean-Blog",
+        url: false,
         main_image: "/images/work/mblog.jpg",
         github: "https://github.com/DimitriMikadze/Mean-Blog",
         images: [
@@ -125,7 +125,7 @@ export const projects = [
         name: "Guess Famous People",
         desc: "Simple quiz mobile app for IOS and Android. This project shows how the code can be architectured to run on IOS and Android with 100% of code in common.",
         job: "Development",
-        url: "https://github.com/DimitriMikadze/react-native-game",
+        url: false,
         main_image: "/images/work/guessfamouspeople.jpg",
         github: "https://github.com/DimitriMikadze/react-native-game",
         images: [

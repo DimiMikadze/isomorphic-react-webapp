@@ -24297,7 +24297,7 @@
 	    name: "Mean Blog",
 	    desc: "Blog using Nodejs, Expressjs, Angularjs and Mongodb. MEAN Javascript Fullstack application",
 	    job: "Development",
-	    url: "https://github.com/DimitriMikadze/Mean-Blog",
+	    url: false,
 	    main_image: "/images/work/mblog.jpg",
 	    github: "https://github.com/DimitriMikadze/Mean-Blog",
 	    images: [{ name: '/images/work/meanblog/blog1.jpg' }, { name: '/images/work/meanblog/blog3.jpg' }, { name: '/images/work/meanblog/blog4.jpg' }, { name: '/images/work/meanblog/blog2.jpg' }]
@@ -24305,7 +24305,7 @@
 	    name: "Guess Famous People",
 	    desc: "Simple quiz mobile app for IOS and Android. This project shows how the code can be architectured to run on IOS and Android with 100% of code in common.",
 	    job: "Development",
-	    url: "https://github.com/DimitriMikadze/react-native-game",
+	    url: false,
 	    main_image: "/images/work/guessfamouspeople.jpg",
 	    github: "https://github.com/DimitriMikadze/react-native-game",
 	    images: [{ name: '/images/work/guessfamouspeople/gfp11.jpg' }, { name: '/images/work/guessfamouspeople/gfp22.jpg' }, { name: '/images/work/guessfamouspeople/gfp33.jpg' }]
@@ -25294,7 +25294,7 @@
 	                                _react2.default.createElement(
 	                                    'a',
 	                                    { href: this.p.url, target: '_blank' },
-	                                    'Visit Website'
+	                                    'View Project'
 	                                )
 	                            ),
 	                            this.p.github && _react2.default.createElement(
