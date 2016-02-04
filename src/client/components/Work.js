@@ -5,9 +5,7 @@ import { projects } from '../../utils/projects';
 class Work extends React.Component {
 
     render() {
-
         let work = projects.map((p, index) => {
-
             return (
                 <Link to={`/work/${p.name.replace(/ /g, '-')}/?f=work`} key={index}>
                     <div className='col-md-4 col-sm-6 col-xs-12 work'>
@@ -22,6 +20,7 @@ class Work extends React.Component {
 
         return (
             <div className="work-container">
+
                 <div className="welcome-work">
                     <div className="container col-sm-12">
                         <h1>Work</h1>

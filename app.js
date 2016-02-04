@@ -20,7 +20,6 @@ app.get('/sitemap.xml', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-
     match({ routes, location: req.url }, (err, redirectLocation, props) => {
 
         if (req.headers.host.match(/^www/) !== null ) {
@@ -36,7 +35,6 @@ app.get('*', (req, res) => {
             res.sendStatus(404);
         }
     });
-
 });
 
 let port = process.env.PORT || '3000';

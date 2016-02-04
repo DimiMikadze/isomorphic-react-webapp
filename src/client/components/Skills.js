@@ -7,6 +7,7 @@ class Skills extends React.Component {
         return (
 
             <div className="skills-container">
+
                 <div className="welcome-skills">
                     <div className="container col-sm-12">
                         <h1>
@@ -18,7 +19,6 @@ class Skills extends React.Component {
 
                 <div className="skills-set-container">
                     <div className="container skill-container">
-
 
                         <div className="skill-wrapper col-xs-12">
                             <h3>

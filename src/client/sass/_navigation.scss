@@ -1,5 +1,4 @@
 header {
-
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -16,8 +15,10 @@ header {
 
   nav {
     margin-top: 1.2em;
+
     li {
       display: inline;
+
       a {
         font-size: 1.3em;
         margin-left: 2em;
@@ -35,10 +36,4 @@ header {
       color: $purple;
     }
   }
-}
-
-.hamburger {
-  cursor: pointer;
-  @include font-size(40px);
-  margin-top: 1.2em;
 }

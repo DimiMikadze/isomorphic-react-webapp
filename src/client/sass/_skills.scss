@@ -4,21 +4,19 @@
 }
 
 .welcome-skills {
-
   overflow: hidden;
   text-align: center;
   background-color: $red;
   padding: 3em 0;
 
   h1 {
-
     font-weight: lighter;
     padding: 0 6em;
+    font-size: 1.9em;
+    color: $white;
     @include md-bf-medium() {
       padding: 0 1em;
     }
-    font-size: 1.9em;
-    color: $white;
   }
 }
 
@@ -42,7 +40,6 @@
 }
 
 .skill {
-
   border-radius: 1em;
   box-shadow: 0 2px 0 rgba(0,0,0,0.06);
   overflow: hidden;
@@ -73,7 +70,6 @@
   .title.design {
     background-color: $design-orange;
     color: $white;
-
     height: 11.3em;
 
     img {
@@ -85,7 +81,6 @@
   .title.hosting {
     background-color: $hosting-blue;
     color: $white;
-
     height: 11.3em;
 
     img {

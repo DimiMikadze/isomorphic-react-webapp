@@ -4,7 +4,6 @@
 }
 
 .welcome-work {
-
   overflow: hidden;
   text-align: center;
   background-color: $green;
@@ -13,11 +12,11 @@
   h1 {
     font-weight: lighter;
     padding: 0 6em;
+    font-size: 1.9em;
+    color: $white;
     @include md-bf-medium() {
       padding: 0 1em;
     }
-    font-size: 1.9em;
-    color: $white;
   }
 }
 
@@ -43,7 +42,6 @@
   line-height: 18em;
   position: relative;
   @include transition(background-color 0.5s ease);
-
   @include md-medium() {
     height: 18em;
     line-height: 14em;

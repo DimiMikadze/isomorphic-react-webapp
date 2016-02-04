@@ -1,6 +1,5 @@
 @mixin social-icons($background, $padding) {
   padding: $padding;
-
   @include transition(background-color 0.1s ease);
 
   &:hover {
@@ -11,7 +10,6 @@
 }
 
 .footer-container {
-
   clear: both;
   padding: 4em 0;
   text-align: center;
@@ -24,7 +22,6 @@
 
     .linkedin {
       @include social-icons($linkedin-blue, 0.5em 0.8em);
-
     }
 
     .twitter {
@@ -45,13 +42,11 @@
       margin: 0 0.5em;
       @include font-size(30px);
       border-radius: 50%;
-
-      &:hover {
-        color: $light-black;
-      }
-
       @include md-xsmall() {
         @include font-size(20px);
+      }
+      &:hover {
+        color: $light-black;
       }
     }
 
@@ -62,9 +57,7 @@
 
     p {
       margin-top: 4em;
-
     }
   }
-
 }
 

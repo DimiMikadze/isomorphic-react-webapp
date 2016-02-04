@@ -6,7 +6,6 @@ import testimonials from '../../utils/testimonials';
 class Home extends React.Component {
 
     render() {
-
         let work = someProjects.map((p, index) => {
 
             return (

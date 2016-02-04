@@ -9,7 +9,6 @@ class Main extends React.Component {
     }
 
     renderPages() {
-
         let path = this.props.location.pathname;
         let page = path.split('/')[1];
         let work = path.split('/')[2];
