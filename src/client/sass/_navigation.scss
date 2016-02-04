@@ -18,11 +18,6 @@ header {
     margin-top: 1.3em;
     li {
       display: inline;
-      @include md-bf-medium() {
-        &:last-of-type {
-          margin-right: 1em;
-        }
-      }
       a {
         font-size: 1.3em;
         margin-left: 2em;
