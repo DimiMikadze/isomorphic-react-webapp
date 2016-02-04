@@ -32,6 +32,9 @@
 
   h1 {
     @include font-size(100px);
+    @include md-xsmall() {
+      @include font-size(60px);
+    }
   }
 
   .heading {
@@ -39,11 +42,15 @@
     @include font-size(30px);
     margin-bottom: -1em;
     color: $gray;
+
   }
 
   .text {
     font-weight: bold;
     @include font-size(50px);
+    @include md-xsmall() {
+      @include font-size(40px);
+    }
   }
 
   .about-project {
