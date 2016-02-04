@@ -168,7 +168,7 @@ export const someProjects = [
         github: false
     },
     {
-        name: "Citydubai",
+        name: "CityDubai",
         image: "/images/work/mcitydubai.jpg",
         job: "Development",
         github: false
