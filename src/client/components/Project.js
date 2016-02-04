@@ -17,8 +17,6 @@ class Project extends React.Component {
             }
         });
 
-        if (project[0] === undefined) { window.location = '/work'; }
-
         this.initialQuery = initialPage;
         this.initialUrl = (initialPage === 'work') ? '/work' : '/';
 
