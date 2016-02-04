@@ -25240,7 +25240,7 @@
 	        }
 
 	        _this.initialQuery = initialPage;
-	        _this.initialUrl = initialPage === 'work' ? 'work' : '/';
+	        _this.initialUrl = initialPage === 'work' ? '/work' : '/';
 
 	        _this.p = project[0];
 
