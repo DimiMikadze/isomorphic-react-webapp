@@ -6,6 +6,7 @@ export const projects = [
         url: "https://cherrytea.ge",
         main_image: "/images/work/mcherrytea.jpg",
         github: false,
+        backgroundColor: '#e15258',
         images: [
             { name: '/images/work/cherrytea/cherrytea1.jpg' },
             { name: '/images/work/cherrytea/cherrytea2.jpg' },
@@ -20,6 +21,7 @@ export const projects = [
         url: "http://citydubai.com",
         main_image: "/images/work/mcitydubai.jpg",
         github: false,
+        backgroundColor: '#288feb',
         images: [
             { name: '/images/work/citydubai/citydubai1.jpg' },
             { name: '/images/work/citydubai/citydubai2.jpg' },
@@ -33,6 +35,7 @@ export const projects = [
         job: "Design and Development",
         url: false,
         main_image: "/images/work/mmagelani.jpg",
+        backgroundColor: '#7d669e',
         github: "",
         images: [
             { name: '/images/work/magelani/magelani1.jpg' },
@@ -48,6 +51,7 @@ export const projects = [
         url: "https://eloan.ge",
         main_image: "/images/work/meloan.jpg",
         github: false,
+        backgroundColor: '#eb7728',
         images: [
             { name: '/images/work/eloan/eloan1.jpg' },
             { name: '/images/work/eloan/eloan2.jpg' },
@@ -61,6 +65,7 @@ export const projects = [
         url: "http://upmelab.com",
         main_image: "/images/work/mupme.jpg",
         github: false,
+        backgroundColor: '#141d3a',
         images: [
             { name: '/images/work/upme/upme1.jpg' },
             { name: '/images/work/upme/upme2.jpg' },
@@ -75,6 +80,7 @@ export const projects = [
         url: "http://admin.upmelab.com/admin/login",
         main_image: "/images/work/mcms.jpg",
         github: "https://github.com/DimitriMikadze/laravel-angular-cms",
+        backgroundColor: '#2c9676',
         images: [
             { name: '/images/work/cms/admin1.jpg' },
             { name: '/images/work/cms/admin2.jpg' },
@@ -89,6 +95,7 @@ export const projects = [
         url: "http://tbilisee.com",
         main_image: "/images/work/mtbilisee.jpg",
         github: false,
+        backgroundColor: '#e15258',
         images: [
             { name: '/images/work/tbilisee/tbilisee1.jpg' },
             { name: '/images/work/tbilisee/tbilisee2.jpg' },
@@ -102,6 +109,7 @@ export const projects = [
         url: "http://carpediem.com",
         main_image: "/images/work/mcarpediem.jpg",
         github: false,
+        backgroundColor: '#288feb',
         images: [
             { name: '/images/work/carpediem/carpediem1.jpg' },
             { name: '/images/work/carpediem/carpediem2.jpg' }
@@ -114,6 +122,7 @@ export const projects = [
         url: false,
         main_image: "/images/work/mblog.jpg",
         github: "https://github.com/DimitriMikadze/Mean-Blog",
+        backgroundColor: '#7d669e',
         images: [
             { name: '/images/work/meanblog/blog1.jpg' },
             { name: '/images/work/meanblog/blog3.jpg' },
@@ -128,6 +137,7 @@ export const projects = [
         url: false,
         main_image: "/images/work/guessfamouspeople.jpg",
         github: "https://github.com/DimitriMikadze/react-native-game",
+        backgroundColor: '#eb7728',
         images: [
             { name: '/images/work/guessfamouspeople/gfp11.jpg' },
             { name: '/images/work/guessfamouspeople/gfp22.jpg' },
@@ -141,6 +151,7 @@ export const projects = [
         url: "http://upmelab.com/demos/vanilla-slideshow",
         main_image: "/images/work/mvanillaslideshow.jpg",
         github: "https://github.com/DimitriMikadze/vanilla-slideshow",
+        backgroundColor: '#141d3a',
         images: [
             { name: '/images/work/slideshow/slideshow11.jpg' },
             { name: '/images/work/slideshow/slideshow22.jpg' },

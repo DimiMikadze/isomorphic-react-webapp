@@ -1,28 +1,26 @@
 .project-container {
 
-  background-color: $white;
-  z-index: 1000000 !important;
-
-  img {
-    @include background-image('loading.gif');
-    background-position: center;
-  }
-
+  z-index: 10 !important;
   position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 
+  img {
+    @include background-image('loading.gif');
+    background-position: center;
+  }
+
   .close-btn {
     position: fixed;
     top: .5em;
     right: .5em;
-    color: $light-black;
+    color: $white;
     font-size: 3em;
 
     &:hover {
-      color: darken($light-black, 20);
+      color: $gray;
     }
   }
 }
@@ -30,22 +28,37 @@
 .project-desc {
 
   width: 100%;
+  color: $white;
 
   h1 {
+    @include font-size(100px);
+  }
+
+  .heading {
+    font-weight: lighter;
+    @include font-size(30px);
+    margin-bottom: -1em;
+    color: $gray;
+  }
+
+  .text {
+    font-weight: bold;
+    @include font-size(50px);
+  }
+
+  .about-project {
     margin-top: 4em;
   }
 
-  h3 {
-    @include font-size(30px);
+  .project-images {
+
+    @include md-af-small() {
+      background-color: $light-gray;
+      padding: 2em;
+      border-radius: 0.2em;
+    }
   }
 
-  p {
-    font-weight: bold;
-    @include font-size(30px);
-  }
-
-  background-color: $white;
-  color: $light-black;
 }
 
 .project-images  {
@@ -65,9 +78,9 @@
 
   a {
     font-size: 1em;
-    color: $light-black;
+    color: $gray;
     &:hover {
-      color: $light-blue;
+      color: $white;
       text-decoration: underline;
     }
   }
@@ -83,9 +96,9 @@
   a {
     display: block;
     width: 100%;
-    color: $black;
+    color: $white;
     &:hover {
-      color: $light-black;
+      color: $gray;
     }
   }
 }

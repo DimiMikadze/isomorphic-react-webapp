@@ -15,20 +15,14 @@ class Project extends React.Component {
             }
         });
 
-        if (project[0] === undefined) {
-            window.location = '/work';
-        }
+        if (project[0] === undefined) { window.location = '/work'; }
 
         this.p = project[0];
 
         let projectIndex = projects.indexOf(project[0]);
         let projectCount = projects.length;
 
-        if (projectIndex + 1 !== projectCount) {
-            this.next = projects[projectIndex + 1].name;
-        } else {
-            this.next = projects[0].name;
-        }
+        this.next = (projectIndex + 1 !== projectCount) ? projects[projectIndex + 1].name : projects[0].name;
     }
 
     render() {
@@ -44,13 +38,21 @@ class Project extends React.Component {
                     <div className="close-btn">X</div>
                 </Link>
 
-                <div className="project-desc" id="project-desc">
+                <div className="project-desc" style={{backgroundColor: this.p.backgroundColor}}>
 
                     <div className="container">
 
                         <h1>{this.p.name}</h1>
-                        <h3>{this.p.job}</h3>
-                        <p>{this.p.desc}</p>
+
+                        <div className="service">
+                            <p className="heading">Service</p>
+                            <h3 className="text">{this.p.job}</h3>
+                        </div>
+
+                        <div className="about-project">
+                            <p className="heading">About Project</p>
+                            <p className="text">{this.p.desc}</p>
+                        </div>
 
                         <div className="project-images">
                             {images}

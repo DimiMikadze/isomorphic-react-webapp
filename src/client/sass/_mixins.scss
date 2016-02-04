@@ -13,6 +13,12 @@
   }
 }
 
+@mixin md-af-small {
+  @media (min-width: "992px") {
+    @content;
+  }
+}
+
 @mixin md-af-xsmall {
   @media (min-width: "768px") {
     @content;
@@ -186,5 +192,3 @@ $font-dir: "/css/fonts/";
 @mixin background-opacity($color, $opacity: 0.3) {
   box-shadow: inset 0 0 0 1000px rgba($color, $opacity);
 }
-
-/* */
