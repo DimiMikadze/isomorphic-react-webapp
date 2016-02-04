@@ -9,14 +9,14 @@ import { routes } from './src/shared/routes';
 const app = express();
 
 app.set("view engine", "ejs");
-app.engine("html", require("ejs").renderFile);
 app.set("views", __dirname + "/static/views");
 
 app.use(express.static("static"));
 app.use(express.static("dist"));
 
 app.get('/sitemap.xml', (req, res) => {
-    res.render('sitemap.xml');
+    res.header('Content-Type', 'application/xml');
+    res.render('sitemap');
 });
 
 app.get('*', (req, res) => {
