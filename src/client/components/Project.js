@@ -7,6 +7,8 @@ class Project extends React.Component {
     constructor(props) {
         super(props);
         const path = this.props.location.pathname;
+        const initialPage = this.props.location.query.f;
+
         let projectName = path.split('/')[2].replace(/-/g, ' ');
         let project = [];
         projects.map((proj, index) => {
@@ -16,6 +18,9 @@ class Project extends React.Component {
         });
 
         if (project[0] === undefined) { window.location = '/work'; }
+
+        this.initialQuery = initialPage;
+        this.initialUrl = (initialPage === 'work') ? 'work' : '/';
 
         this.p = project[0];
 
@@ -34,7 +39,7 @@ class Project extends React.Component {
         return (
             <div className="project-container">
 
-                <Link to="/work">
+                <Link to={this.initialUrl}>
                     <div className="close-btn">X</div>
                 </Link>
 
@@ -64,7 +69,7 @@ class Project extends React.Component {
                         </div>
 
                         <div className="next-project">
-                            <a href={`/work/${this.next.replace(/ /g, '-')}`} >
+                            <a href={`/work/${this.next.replace(/ /g, '-')}/?f=${this.initialQuery}`} >
                                 Next Work
                             </a>
                         </div>

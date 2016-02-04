@@ -9,7 +9,7 @@ class Work extends React.Component {
         let work = projects.map((p, index) => {
 
             return (
-                <Link to={`/work/${p.name.replace(/ /g, '-')}`} key={index}>
+                <Link to={`/work/${p.name.replace(/ /g, '-')}/?f=work`} key={index}>
                     <div className='col-md-4 col-sm-6 col-xs-12 work'>
                         <h3>{p.name}</h3>
                         <p>{p.job}</p>

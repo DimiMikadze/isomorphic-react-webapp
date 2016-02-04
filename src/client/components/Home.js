@@ -10,7 +10,7 @@ class Home extends React.Component {
         let work = someProjects.map((p, index) => {
 
             return (
-                <Link to={`/work/${p.name}`} key={index}>
+                <Link to={`/work/${p.name.replace(/ /g, '-')}/?f=home`} key={index}>
                     <div className="col-md-4 col-sm-6 col-xs-12 work">
                         <h3>{p.name}</h3>
                         <p>{p.job}</p>
