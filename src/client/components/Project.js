@@ -57,9 +57,7 @@ class Project extends React.Component {
                         </div>
 
                         <div className="project-link">
-                            <p><a href={this.p.url} target="_blank">
-                                View Project
-                            </a></p>
+                            { this.p.url && <p><a href={this.p.url} target='_blank'>View Project</a></p> }
                             { this.p.github && <p><a href={this.p.github} target='_blank'>Fork me on Github</a></p> }
                         </div>
 

@@ -24246,7 +24246,7 @@
 	    github: false,
 	    images: [{ name: '/images/work/citydubai/citydubai1.jpg' }, { name: '/images/work/citydubai/citydubai2.jpg' }, { name: '/images/work/citydubai/citydubai3.jpg' }, { name: '/images/work/citydubai/citydubai4.jpg' }]
 	}, {
-	    name: "Magelani",
+	    name: "Megasport",
 	    desc: "Timberland and Northface store in Tbilisi, Georgia.",
 	    job: "Design and Development",
 	    url: false,
@@ -24330,7 +24330,7 @@
 	    job: "Development",
 	    github: false
 	}, {
-	    name: "Magelani",
+	    name: "Megasport",
 	    image: "/images/work/mmagelani.jpg",
 	    job: "Design and Development",
 	    github: false
@@ -25288,7 +25288,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'project-link' },
-	                            _react2.default.createElement(
+	                            this.p.url && _react2.default.createElement(
 	                                'p',
 	                                null,
 	                                _react2.default.createElement(

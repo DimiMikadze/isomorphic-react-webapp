@@ -28,7 +28,7 @@ export const projects = [
         ]
     },
     {
-        name: "Magelani",
+        name: "Megasport",
         desc: "Timberland and Northface store in Tbilisi, Georgia.",
         job: "Design and Development",
         url: false,
@@ -163,7 +163,7 @@ export const someProjects = [
         github: false
     },
     {
-        name: "Magelani",
+        name: "Megasport",
         image: "/images/work/mmagelani.jpg",
         job: "Design and Development",
         github: false
