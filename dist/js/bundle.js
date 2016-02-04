@@ -24486,6 +24486,11 @@
 	    }
 
 	    _createClass(Navigation, [{
+	        key: 'toggleNavigation',
+	        value: function toggleNavigation() {
+	            alert(1);
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            return _react2.default.createElement(
@@ -24885,7 +24890,7 @@
 	                                            _react2.default.createElement(
 	                                                'li',
 	                                                null,
-	                                                'Isomorphic Univarsal JS'
+	                                                'Isomorphic / Univarsal JS'
 	                                            ),
 	                                            _react2.default.createElement(
 	                                                'li',
@@ -25071,7 +25076,7 @@
 	                                            _react2.default.createElement(
 	                                                'li',
 	                                                null,
-	                                                'Sass/Scss'
+	                                                'Sass / Scss'
 	                                            ),
 	                                            _react2.default.createElement(
 	                                                'li',

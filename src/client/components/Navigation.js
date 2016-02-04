@@ -3,6 +3,10 @@ import { Link, IndexLink } from 'react-router';
 
 class Navigation extends React.Component {
 
+    toggleNavigation() {
+        alert(1);
+    }
+
     render() {
         return (
             <header className="container">
@@ -13,6 +17,7 @@ class Navigation extends React.Component {
                         <span className="hide-bf-medium">DM</span>
                     </Link>
                 </div>
+
 
                 <nav className="col-xs-10 col-sm-8">
                     <ul className="pull-right">

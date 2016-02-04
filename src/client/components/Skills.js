@@ -40,7 +40,7 @@ class Skills extends React.Component {
                                             <li>jQuery</li>
                                             <li>Node JS / Express JS</li>
                                             <li>ES6 / ES7</li>
-                                            <li>Isomorphic Univarsal JS</li>
+                                            <li>Isomorphic / Univarsal JS</li>
                                             <li>Restful Web Services</li>
                                             <li>Socket IO</li>
                                             <li>Unit testing with Chai / Mocha</li>
@@ -116,7 +116,7 @@ class Skills extends React.Component {
                                         <ul>
                                             <li>HTML5</li>
                                             <li>CSS3</li>
-                                            <li>Sass/Scss</li>
+                                            <li>Sass / Scss</li>
                                             <li>Bootstrap</li>
                                             <li>Sketch</li>
                                             <li>Photoshop</li>
