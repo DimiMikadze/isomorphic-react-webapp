@@ -60,8 +60,9 @@
   .project-images {
 
     @include md-af-small() {
+      box-shadow: 0 2px 0 rgba(0,0,0,0.2);
       background-color: $light-gray;
-      padding: 2em;
+      padding: .5em 3em 3em 3em;
       border-radius: 0.2em;
     }
   }

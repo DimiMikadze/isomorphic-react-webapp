@@ -48,7 +48,6 @@
 }
 
 .some-work {
-
   text-align: center;
   padding-bottom: 6em;
 }
@@ -64,7 +63,6 @@ h2 {
 }
 
 .work {
-
   position: relative;
   overflow: hidden;
   height: 22em;
@@ -136,13 +134,12 @@ h2 {
 }
 
 .testimonials-container {
-
   background-color: $light-gray;
   padding: 5em 0;
 
   .testimonials {
-
     text-align: center;
+
     h2 {
       margin-bottom: 3em;
       @include font-size(35px);
