@@ -6,9 +6,7 @@
   "scripts": {
     "start": "nodemon app.js --exec babel-node",
     "serve": "export PORT=80 && pm2 start server.js",
-    "watch-css": "gulp sass:watch",
-    "watch-scripts": "webpack -w",
-    "build": "gulp compress"
+    "watch": "gulp watch"
   },
   "babel": {
     "presets": [
@@ -19,6 +17,7 @@
     "UI/UX",
     "Designer",
     "Web",
+    "Mobile",
     "Developer"
   ],
   "author": "Dimitri Mikadze",

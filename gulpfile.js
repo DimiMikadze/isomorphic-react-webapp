@@ -11,14 +11,8 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('compress', function() {
-    return gulp.src('./dist/js/bundle.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('./dist/js/'));
-});
-
 gulp.task('scripts', function() {
-    return gulp.src('./src/client/client.js')
+    gulp.src('./src/client/client.js')
         .pipe(webpack({
             watch: true,
             module: {
@@ -44,6 +38,14 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('./dist/js/'));
 });
 
+gulp.task('compress', function() {
+    gulp.src('./dist/js/bundle.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js/'));
+});
+
 gulp.task('sass:watch', function () {
     gulp.watch('./src/client/sass/**/*.scss', ['sass']);
 });
+
+gulp.task('watch', ['scripts', 'sass:watch']);
