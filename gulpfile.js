@@ -3,7 +3,6 @@ var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var path = require('path');
 var webpack = require('gulp-webpack');
-var exports = require('exports-loader');
 
 gulp.task('sass', function () {
     gulp.src('./src/client/sass/bundle.scss')
@@ -35,10 +34,6 @@ gulp.task('scripts', function() {
                         query: {
                             presets: ['es2015', 'react']
                         }
-                    },
-                    {
-                        test: require.resolve('wow.js/dist/wow.min.js'),
-                        loader: 'exports?this.WOW'
                     }
                 ]
             },

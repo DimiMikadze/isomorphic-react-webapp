@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router';
-import WOW from 'wow.js/dist/wow.min';
 
 import { routes } from '../shared/routes';
 
 import createBrowserHistory from './../../node_modules/history/lib/createBrowserHistory';
 
-const wow = new WOW({ mobile: false, live: false });
+const wow = new WOW({ mobile: false });
 wow.init();
 
 ReactDOM.render(
