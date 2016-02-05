@@ -5,7 +5,7 @@ class Footer extends React.Component {
         return (
             <div className="container footer-container">
                 <div className="lets-talk wow fadeIn">
-                    <h3>Lets Talk</h3>
+                    <h3>Let's Talk</h3>
                     <a href="mailto:dimitrimikadze@gmail.com" className="email">
                         <i className="fa fa-envelope wow fadeInUp" data-wow-delay=".1s"></i>
                     </a>
