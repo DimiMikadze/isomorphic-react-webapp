@@ -7,6 +7,7 @@ export const projects = [
         main_image: "/images/work/mcherrytea.jpg",
         github: false,
         backgroundColor: '#e15258',
+        delay: '0.1s',
         images: [
             { name: '/images/work/cherrytea/cherrytea1.jpg' },
             { name: '/images/work/cherrytea/cherrytea2.jpg' },
@@ -22,6 +23,7 @@ export const projects = [
         main_image: "/images/work/mcitydubai.jpg",
         github: false,
         backgroundColor: '#288feb',
+        delay: '0.2s',
         images: [
             { name: '/images/work/citydubai/citydubai1.jpg' },
             { name: '/images/work/citydubai/citydubai2.jpg' },
@@ -37,6 +39,7 @@ export const projects = [
         main_image: "/images/work/mmagelani.jpg",
         backgroundColor: '#7d669e',
         github: "",
+        delay: '0.3s',
         images: [
             { name: '/images/work/magelani/magelani1.jpg' },
             { name: '/images/work/magelani/magelani2.jpg' },
@@ -52,6 +55,7 @@ export const projects = [
         main_image: "/images/work/meloan.jpg",
         github: false,
         backgroundColor: '#eb7728',
+        delay: '0.1s',
         images: [
             { name: '/images/work/eloan/eloan1.jpg' },
             { name: '/images/work/eloan/eloan2.jpg' },
@@ -66,6 +70,7 @@ export const projects = [
         main_image: "/images/work/mupme.jpg",
         github: false,
         backgroundColor: '#141d3a',
+        delay: '0.2s',
         images: [
             { name: '/images/work/upme/upme1.jpg' },
             { name: '/images/work/upme/upme2.jpg' },
@@ -81,6 +86,7 @@ export const projects = [
         main_image: "/images/work/mcms.jpg",
         github: "https://github.com/DimitriMikadze/laravel-angular-cms",
         backgroundColor: '#2c9676',
+        delay: '0.3s',
         images: [
             { name: '/images/work/cms/admin1.jpg' },
             { name: '/images/work/cms/admin2.jpg' },
@@ -96,6 +102,7 @@ export const projects = [
         main_image: "/images/work/mtbilisee.jpg",
         github: false,
         backgroundColor: '#e15258',
+        delay: '0.1s',
         images: [
             { name: '/images/work/tbilisee/tbilisee1.jpg' },
             { name: '/images/work/tbilisee/tbilisee2.jpg' },
@@ -110,6 +117,7 @@ export const projects = [
         main_image: "/images/work/mcarpediem.jpg",
         github: false,
         backgroundColor: '#288feb',
+        delay: '0.2s',
         images: [
             { name: '/images/work/carpediem/carpediem1.jpg' },
             { name: '/images/work/carpediem/carpediem2.jpg' }
@@ -123,6 +131,7 @@ export const projects = [
         main_image: "/images/work/mblog.jpg",
         github: "https://github.com/DimitriMikadze/Mean-Blog",
         backgroundColor: '#7d669e',
+        delay: '0.3s',
         images: [
             { name: '/images/work/meanblog/blog1.jpg' },
             { name: '/images/work/meanblog/blog3.jpg' },
@@ -138,6 +147,7 @@ export const projects = [
         main_image: "/images/work/guessfamouspeople.jpg",
         github: "https://github.com/DimitriMikadze/react-native-game",
         backgroundColor: '#eb7728',
+        delay: '0.1s',
         images: [
             { name: '/images/work/guessfamouspeople/gfp11.jpg' },
             { name: '/images/work/guessfamouspeople/gfp22.jpg' },
@@ -152,6 +162,7 @@ export const projects = [
         main_image: "/images/work/mvanillaslideshow.jpg",
         github: "https://github.com/DimitriMikadze/vanilla-slideshow",
         backgroundColor: '#141d3a',
+        delay: '0.2s',
         images: [
             { name: '/images/work/slideshow/slideshow11.jpg' },
             { name: '/images/work/slideshow/slideshow22.jpg' },
@@ -165,36 +176,42 @@ export const someProjects = [
         name: "Cherrytea",
         image: "/images/work/mcherrytea.jpg",
         job: "Landing Page Design and Development",
-        github: false
+        github: false,
+        delay: '0.1s'
     },
     {
         name: "CityDubai",
         image: "/images/work/mcitydubai.jpg",
         job: "Development",
-        github: false
+        github: false,
+        delay: '0.2s'
     },
     {
         name: "Megasport",
         image: "/images/work/mmagelani.jpg",
         job: "Design and Development",
-        github: false
+        github: false,
+        delay: '0.3s'
     },
     {
         name: "Eloan",
         image: "/images/work/meloan.jpg",
         job: "Development",
-        github: false
+        github: false,
+        delay: '0.1s'
     },
     {
         name: "Upme",
         image: "/images/work/mupme.jpg",
         job: "Design and Development",
-        github: false
+        github: false,
+        delay: '0.2s'
     },
     {
         name: "Cms",
         image: "/images/work/mcms.jpg",
         job: "Design and Development",
-        github: "https://github.com/DimitriMikadze/laravel-angular-cms"
+        github: "https://github.com/DimitriMikadze/laravel-angular-cms",
+        delay: '0.3s'
     }
 ];

@@ -9,7 +9,7 @@ class Skills extends React.Component {
             <div className="skills-container">
 
                 <div className="welcome-skills">
-                    <div className="container col-sm-12">
+                    <div className="container col-sm-12 wow fadeInUp">
                         <h1>
                             Experienced in building high quality applications, using best practices, test driven development and agile methodology.
                             I'm interested in building quality applications that not just works, but also well designed, easy to maintain and extend in the future.
@@ -20,7 +20,7 @@ class Skills extends React.Component {
                 <div className="skills-set-container">
                     <div className="container skill-container">
 
-                        <div className="skill-wrapper col-xs-12">
+                        <div className="skill-wrapper col-xs-12 wow fadeInUp">
                             <h3>
                                 I'm mostly interested in JavaScript applications right now. <br />
                                 I spent past years developing Full Stack Javascript apps.
@@ -52,7 +52,7 @@ class Skills extends React.Component {
                             </div>
                         </div>
 
-                        <div className="skill-wrapper col-xs-12">
+                        <div className="skill-wrapper col-xs-12 wow fadeInUp">
                             <h3>
                                 Experience in data modeling and managing large databases.
                             </h3>
@@ -76,7 +76,7 @@ class Skills extends React.Component {
                             </div>
                         </div>
 
-                        <div className="skill-wrapper col-xs-12">
+                        <div className="skill-wrapper col-xs-12 wow fadeInUp">
                             <h3>
                                 I'm proficient with Object Oriented PHP <br />
                                 and I'm also a Laravel early adopter, I've been using it since version 3.
@@ -101,7 +101,7 @@ class Skills extends React.Component {
                             </div>
                         </div>
 
-                        <div className="skill-wrapper col-xs-12">
+                        <div className="skill-wrapper col-xs-12 wow fadeInUp">
                             <h3>
                                 Markup, Styles and Design Skills
                             </h3>
@@ -126,7 +126,7 @@ class Skills extends React.Component {
                             </div>
                         </div>
 
-                        <div className="skill-wrapper col-xs-12">
+                        <div className="skill-wrapper col-xs-12 wow fadeInUp">
                             <h3>
                                 Hosting Services
                             </h3>
@@ -150,7 +150,7 @@ class Skills extends React.Component {
                             </div>
                         </div>
 
-                        <div className="skill-wrapper col-xs-12">
+                        <div className="skill-wrapper col-xs-12 wow fadeInLeft">
                             <div className="go-to-projects">
                                 <Link to="/work">
                                     Take a look at my Portfolio

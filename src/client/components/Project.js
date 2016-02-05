@@ -45,19 +45,19 @@ class Project extends React.Component {
 
                     <div className="container">
 
-                        <h1>{this.p.name}</h1>
+                        <h1 className="wow fadeInDown">{this.p.name}</h1>
 
-                        <div className="service">
+                        <div className="service wow fadeInLeft">
                             <p className="heading">Service</p>
                             <h3 className="text">{this.p.job}</h3>
                         </div>
 
-                        <div className="about-project">
+                        <div className="about-project wow fadeInLeft">
                             <p className="heading">About Project</p>
                             <p className="text">{this.p.desc}</p>
                         </div>
 
-                        <div className="project-images">
+                        <div className="project-images wow fadeInUp">
                             {images}
                         </div>
 

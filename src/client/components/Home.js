@@ -10,7 +10,7 @@ class Home extends React.Component {
 
             return (
                 <Link to={`/work/${p.name.replace(/ /g, '-')}/?f=home`} key={index}>
-                    <div className="col-md-4 col-sm-6 col-xs-12 work">
+                    <div className="col-md-4 col-sm-6 col-xs-12 work wow fadeInUp" data-wow-delay={p.delay}>
                         <h3>{p.name}</h3>
                         <p>{p.job}</p>
                         <img src={`${p.image}`} alt={`${p.name}`} className="main-image"/>
@@ -18,12 +18,13 @@ class Home extends React.Component {
                     </div>
                 </Link>
             )
+
         });
 
         let testimonial = testimonials.map((t, index) => {
 
             return (
-                <div className="testimonial col-sm-4 col-xs-12" key={index}>
+                <div className="testimonial col-sm-4 col-xs-12 wow fadeInLeft" key={index} data-wow-delay={t.delay}>
                     <img src={`${t.image}`} alt={`${t.name}`}/>
                     <p>{t.testimonial}</p>
                     <h3 className="t-name">{t.name}</h3>
@@ -36,7 +37,7 @@ class Home extends React.Component {
             <div className="home-container">
 
                 <div className="welcome-home">
-                    <div className="container col-sm-12">
+                    <div className="container col-sm-12 wow fadeInUp">
                         <div className="about-me">
                             <h1>
                                 I'm full stack web and mobile app developer, experienced in UX/UI design.

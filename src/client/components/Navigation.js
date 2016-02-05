@@ -5,7 +5,7 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <header className="container">
+            <header className="container wow fadeInDown">
 
                 <div className="logo col-xs-2 col-sm-4">
                     <Link to="/">

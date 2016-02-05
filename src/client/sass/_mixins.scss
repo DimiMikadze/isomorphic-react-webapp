@@ -192,3 +192,4 @@ $font-dir: "/css/fonts/";
 @mixin background-opacity($color, $opacity: 0.3) {
   box-shadow: inset 0 0 0 1000px rgba($color, $opacity);
 }
+
