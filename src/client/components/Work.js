@@ -23,7 +23,7 @@ class Work extends React.Component {
             <div className="work-container">
 
                 <div className="welcome-work">
-                    <div className="container col-sm-12 wow fadeInUp">
+                    <div className="container col-sm-12 wow fadeIn">
                         <h1>Work</h1>
                     </div>
                 </div>

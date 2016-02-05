@@ -37,7 +37,7 @@ class Home extends React.Component {
             <div className="home-container">
 
                 <div className="welcome-home">
-                    <div className="container col-sm-12 wow fadeInUp">
+                    <div className="container col-sm-12 wow fadeIn">
                         <div className="about-me">
                             <h1>
                                 I'm full stack web and mobile app developer, experienced in UX/UI design.

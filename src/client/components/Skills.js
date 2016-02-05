@@ -9,7 +9,7 @@ class Skills extends React.Component {
             <div className="skills-container">
 
                 <div className="welcome-skills">
-                    <div className="container col-sm-12 wow fadeInUp">
+                    <div className="container col-sm-12 wow fadeIn">
                         <h1>
                             Experienced in building high quality applications, using best practices, test driven development and agile methodology.
                             I'm interested in building quality applications that not just works, but also well designed, easy to maintain and extend in the future.
