@@ -6,9 +6,9 @@ import { routes } from '../shared/routes';
 
 import createBrowserHistory from './../../node_modules/history/lib/createBrowserHistory';
 
+new WOW().init();
+
 ReactDOM.render(
     <Router onUpdate={() => window.scrollTo(0, 0)} routes={routes} history={createBrowserHistory()} />,
     document.getElementById('react-root')
 );
-
-new WOW().init();
