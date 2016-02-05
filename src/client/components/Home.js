@@ -24,7 +24,7 @@ class Home extends React.Component {
         let testimonial = testimonials.map((t, index) => {
 
             return (
-                <div className="testimonial col-sm-4 col-xs-12 wow fadeInLeft" key={index} data-wow-delay={t.delay}>
+                <div className="testimonial col-sm-4 col-xs-12 wow fadeInUp" key={index} data-wow-delay={t.delay}>
                     <img src={`${t.image}`} alt={`${t.name}`}/>
                     <p>{t.testimonial}</p>
                     <h3 className="t-name">{t.name}</h3>
@@ -37,8 +37,8 @@ class Home extends React.Component {
             <div className="home-container">
 
                 <div className="welcome-home">
-                    <div className="container col-sm-12 wow fadeInUp">
-                        <div className="about-me">
+                    <div className="container col-sm-12">
+                        <div className="about-me wow fadeInUp">
                             <h1>
                                 I'm full stack web and mobile app developer, experienced in UX/UI design.
                                 Past 5 years i collaborated with amazing people around the world to create beautifully-designed, robust solutions.
@@ -47,7 +47,7 @@ class Home extends React.Component {
                             </h1>
                         </div>
 
-                        <div className="go-to-work">
+                        <div className="go-to-work wow slideInLeft">
                             <Link to="/skills">
                                 See My Skills
                             </Link>
@@ -56,12 +56,12 @@ class Home extends React.Component {
                 </div>
 
                 <div className="some-work container">
-                    <h2>Some Of My Work</h2>
+                    <h2 className="wow fadeInUp">Some Of My Work</h2>
                     <div className="home-work-container">
                         {work}
                     </div>
 
-                    <div className="go-to-projects">
+                    <div className="go-to-projects wow fadeInLeft">
                         <Link to="/work">
                             Full Portfolio
                         </Link>
