@@ -6,8 +6,6 @@ import { routes } from '../shared/routes';
 
 import createBrowserHistory from './../../node_modules/history/lib/createBrowserHistory';
 
-new WOW().init();
-
 const wow = new WOW({ mobile: false });
 wow.init();
 
