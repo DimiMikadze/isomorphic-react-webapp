@@ -38,7 +38,7 @@ class Project extends React.Component {
             <div className="project-container">
 
                 <Link to={this.initialUrl}>
-                    <div className="close-btn">X</div>
+                    <div className="close-btn">&#215;</div>
                 </Link>
 
                 <div className="project-desc" style={{backgroundColor: this.p.backgroundColor}}>
