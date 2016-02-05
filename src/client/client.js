@@ -8,6 +8,9 @@ import createBrowserHistory from './../../node_modules/history/lib/createBrowser
 
 new WOW().init();
 
+const wow = new WOW({ mobile: false });
+wow.init();
+
 ReactDOM.render(
     <Router onUpdate={() => window.scrollTo(0, 0)} routes={routes} history={createBrowserHistory()} />,
     document.getElementById('react-root')

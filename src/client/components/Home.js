@@ -47,7 +47,7 @@ class Home extends React.Component {
                             </h1>
                         </div>
 
-                        <div className="go-to-work wow slideInLeft">
+                        <div className="go-to-work">
                             <Link to="/skills">
                                 See My Skills
                             </Link>
