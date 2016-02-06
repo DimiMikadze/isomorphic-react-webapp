@@ -61,7 +61,7 @@ class Home extends React.Component {
                         {work}
                     </div>
 
-                    <div className="go-to-projects wow fadeInLeft">
+                    <div className="go-to-projects wow zoomIn">
                         <Link to="/work">
                             Full Portfolio
                         </Link>

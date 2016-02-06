@@ -150,7 +150,7 @@ class Skills extends React.Component {
                             </div>
                         </div>
 
-                        <div className="skill-wrapper col-xs-12 wow fadeInLeft">
+                        <div className="skill-wrapper col-xs-12 wow zoomIn">
                             <div className="go-to-projects">
                                 <Link to="/work">
                                     Take a look at my Portfolio
