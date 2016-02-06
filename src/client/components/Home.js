@@ -56,7 +56,7 @@ class Home extends React.Component {
                 </div>
 
                 <div className="some-work container">
-                    <h2 className="wow fadeInUp">Some Of My Works</h2>
+                    <h2 className="wow fadeInUp">Some Of My Work</h2>
                     <div className="home-work-container">
                         {work}
                     </div>
