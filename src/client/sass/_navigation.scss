@@ -75,3 +75,14 @@ header {
   cursor: pointer;
   @include font-size(40px);
 }
+
+.contact {
+  border: 1px solid $purple;
+  padding: .3em .5em;
+  @include transition(all ease .5s);
+  box-shadow: inset 0 0 0 0 $purple;
+  &:hover {
+    color: $white;
+    box-shadow: inset 0 100px 0 0 $purple;
+  }
+}

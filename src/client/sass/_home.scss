@@ -36,14 +36,13 @@
     a {
       color: $light-black;
       padding: 0.4em 2em;
-      border: 1px solid $purple;
-      border-radius: 0.2em;
+      border: 1px solid $green;
       @include font-size(34px);
       @include transition(all ease .5s);
-      box-shadow: inset 0 0 0 0 $purple;
+      box-shadow: inset 0 0 0 0 $green;
       &:hover {
         color: $white;
-        box-shadow: inset 300px 0 0 0 $purple;
+        box-shadow: inset 300px 0 0 0 $green;
       }
     }
   }
@@ -129,7 +128,6 @@ h2 {
   a {
     color: $light-black;
     padding: 0.4em 2em;
-    border-radius: 0.2em;
     @include font-size(34px);
     border: 1px solid $green;
     @include transition(all ease .5s);

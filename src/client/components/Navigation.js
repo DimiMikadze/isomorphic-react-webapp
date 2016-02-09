@@ -45,7 +45,7 @@ class Navigation extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <a href="mailto:dimitrimikadze@gmail.com" onClick={this.hideNav.bind(this)}>
+                            <a className="contact" href="mailto:dimitrimikadze@gmail.com" onClick={this.hideNav.bind(this)}>
                                 Contact
                             </a>
                         </li>
