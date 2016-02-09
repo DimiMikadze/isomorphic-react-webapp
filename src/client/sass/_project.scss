@@ -15,11 +15,17 @@
   .close-btn {
     position: fixed;
     top: 0;
-    right: .3em;
+    right: 0;
     color: $white;
     @include font-size(100px);
+    padding: 0 0.2em;
+    text-shadow: 2px 2px 5px $light-black;
     &:hover {
-      color: $gray;
+      text-shadow: none;
+      background-color: $white;
+      color: $light-black;
+      @include transition(background-color 0.1s ease);
+      @include shaddow-box(2);
     }
   }
 }

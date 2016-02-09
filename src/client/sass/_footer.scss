@@ -16,6 +16,10 @@
 
   .lets-talk {
 
+    @include md-xsmall() {
+      margin-top: 8em;
+    }
+
     .github {
       @include social-icons($light-black, 0.5em 0.8em);
     }

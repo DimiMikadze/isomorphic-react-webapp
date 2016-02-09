@@ -1,8 +1,15 @@
 header {
   position: relative;
   z-index: 10;
-  overflow: hidden;
   height: 6em;
+  @include md-xsmall() {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    width: 100%;
+    border-bottom: 1px solid $gray;
+  }
 
   .logo {
     margin-top: 1.8em;
@@ -16,16 +23,39 @@ header {
   nav {
     margin-top: 1.2em;
 
+    ul {
+      float: right;
+      @include md-xsmall() {
+        float: none;
+        width: 100% !important;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 4.9em;
+        border: 1px solid $gray;
+        background-color: $white;
+        color: $light-black;
+        padding: 0;
+      }
+    }
+
     li {
       display: inline;
+      @include md-xsmall() {
+        display: block;
+        padding: 1em 0 !important;
+        margin: 0 !important;
+        text-align: center;
+      }
 
       a {
         font-size: 1.3em;
         margin-left: 2em;
         color: $light-black;
         @include md-xsmall() {
-          margin-left: 1em;
+          margin: 0 !important;
         }
+
         &:hover {
           text-decoration: none;
           color: $black;
@@ -37,6 +67,9 @@ header {
     }
   }
 }
-.wow {
-  visibility: hidden;
+
+.hamburger {
+  margin-top: 0.4em;
+  cursor: pointer;
+  @include font-size(40px);
 }

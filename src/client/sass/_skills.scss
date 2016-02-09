@@ -1,6 +1,9 @@
 .skills-container {
   overflow: hidden;
   position: relative;
+  @include md-xsmall() {
+    top: 6em;
+  }
 }
 
 .welcome-skills {

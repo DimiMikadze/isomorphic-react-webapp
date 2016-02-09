@@ -3,6 +3,21 @@ import { Link, IndexLink } from 'react-router';
 
 class Navigation extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            mobileNav: false
+        };
+    }
+
+    toggleMobileNav() {
+        this.setState({ mobileNav: !this.state.mobileNav });
+    }
+
+    hideNav() {
+        this.setState({mobileNav: false});
+    }
+
     render() {
         return (
             <header className="container wow fadeInDown">
@@ -15,19 +30,22 @@ class Navigation extends React.Component {
                 </div>
 
                 <nav className="col-xs-10 col-sm-8">
-                    <ul className="pull-right">
+
+                    <i className="fa fa-bars pull-right visible-xs hamburger" onClick={this.toggleMobileNav.bind(this)}></i>
+
+                    <ul className={this.state.mobileNav ? "" : "hidden-xs"}>
                         <li>
-                            <IndexLink to="/skills" activeClassName="active">
+                            <Link to="/skills" activeClassName="active" onClick={this.hideNav.bind(this)}>
                                 Skills
-                            </IndexLink>
+                            </Link>
                         </li>
                         <li>
-                            <Link to="/work" activeClassName="active">
+                            <Link to="/work" activeClassName="active" onClick={this.hideNav.bind(this)}>
                                 Work
                             </Link>
                         </li>
                         <li>
-                            <a href="mailto:dimitrimikadze@gmail.com">
+                            <a href="mailto:dimitrimikadze@gmail.com" onClick={this.hideNav.bind(this)}>
                                 Contact
                             </a>
                         </li>
