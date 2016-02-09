@@ -24,7 +24,7 @@ class Home extends React.Component {
         let testimonial = testimonials.map((t, index) => {
 
             return (
-                <div className="testimonial col-sm-4 col-xs-12 wow fadeIn" key={index} data-wow-delay={t.delay}>
+                <div className="testimonial col-sm-4 col-xs-12 wow fadeInUp" key={index} data-wow-delay={t.delay}>
                     <img src={`${t.image}`} alt={`${t.name}`}/>
                     <p>{t.testimonial}</p>
                     <h3 className="t-name">
