@@ -10,12 +10,11 @@
   overflow: hidden;
   text-align: center;
   background-color: $white;
-  padding: 3em 0 5em 0;
-  margin-bottom: 4em;
+  padding: 3em 0;
+  margin-bottom: 3em;
 
   .about-me {
     text-align: center;
-    margin: 0 auto;
 
     h1 {
       @include font-size(55px);
