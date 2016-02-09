@@ -22,7 +22,6 @@ class Skills extends React.Component {
 
                         <div className="skill-wrapper col-xs-12 wow fadeInUp">
                             <h3>
-                                I'm mostly interested in JavaScript applications right now. <br />
                                 I spent past years developing Full Stack Javascript apps.
                             </h3>
 

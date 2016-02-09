@@ -41,7 +41,7 @@ class Home extends React.Component {
                         <div className="about-me">
                             <h1>
                                 I'm full stack web and mobile app developer, experienced in UX/UI design.
-                                Past 5 years i collaborated with amazing people around the world to create beautifully-designed, robust solutions.
+                                Past several years i collaborated with amazing people around the world to create beautifully-designed, robust solutions.
                                 I’m passionate about building high quality applications and user interfaces with modern web technologies.
                                 In my free time i enjoy contributing to open source projects.
                             </h1>
