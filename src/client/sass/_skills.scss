@@ -9,14 +9,14 @@
 .welcome-skills {
   overflow: hidden;
   text-align: center;
-  background-color: $red;
+  background-color: $white;
   padding: 3em 0;
 
   h1 {
     font-weight: lighter;
     padding: 0 6em;
-    font-size: 1.9em;
-    color: $white;
+    @include font-size(55px);
+    color: $light-black;
     @include md-bf-medium() {
       padding: 0 1em;
     }

@@ -24,10 +24,12 @@ class Home extends React.Component {
         let testimonial = testimonials.map((t, index) => {
 
             return (
-                <div className="testimonial col-sm-4 col-xs-12 wow fadeInUp" key={index} data-wow-delay={t.delay}>
+                <div className="testimonial col-sm-4 col-xs-12 wow fadeIn" key={index} data-wow-delay={t.delay}>
                     <img src={`${t.image}`} alt={`${t.name}`}/>
                     <p>{t.testimonial}</p>
-                    <h3 className="t-name">{t.name}</h3>
+                    <h3 className="t-name">
+                        {t.name}
+                    </h3>
                     <h3>{t.position}</h3>
                 </div>
             )
@@ -45,26 +47,27 @@ class Home extends React.Component {
                                 I’m passionate about building high quality applications and user interfaces with modern web technologies.
                                 In my free time i enjoy contributing to open source projects.
                             </h1>
-                        </div>
-
-                        <div className="go-to-work">
-                            <Link to="/skills">
-                                See My Skills
-                            </Link>
+                            <div className="go-to-work">
+                                <Link to="/skills">
+                                    See My Skills
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="some-work container">
-                    <h2 className="wow fadeInUp">Some Of My Work</h2>
-                    <div className="home-work-container">
-                        {work}
-                    </div>
+                <div className="some-work">
+                    <div className="container">
+                        <h2 className="wow fadeInUp home-work-header">Some Of My Work</h2>
+                        <div className="home-work-container">
+                            {work}
+                        </div>
 
-                    <div className="go-to-projects wow zoomIn">
-                        <Link to="/work">
-                            Full Portfolio
-                        </Link>
+                        <div className="go-to-projects wow zoomIn">
+                            <Link to="/work">
+                                Full Portfolio
+                            </Link>
+                        </div>
                     </div>
                 </div>
 

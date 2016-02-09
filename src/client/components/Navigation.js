@@ -23,7 +23,7 @@ class Navigation extends React.Component {
             <header className="container wow fadeInDown">
 
                 <div className="logo col-xs-2 col-sm-4">
-                    <Link to="/">
+                    <Link to="/" activeClassName="active">
                         <span className="hide-bf-small">Dimitri Mikadze</span>
                         <span className="hide-bf-medium">DM</span>
                     </Link>

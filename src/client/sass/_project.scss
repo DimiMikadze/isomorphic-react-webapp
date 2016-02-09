@@ -20,11 +20,11 @@
     @include font-size(100px);
     padding: 0 0.2em;
     text-shadow: 2px 2px 5px $light-black;
+    @include transition(background-color 0.1s ease);
     &:hover {
       text-shadow: none;
       background-color: $white;
       color: $light-black;
-      @include transition(background-color 0.1s ease);
       @include shaddow-box(2);
     }
   }
@@ -89,7 +89,7 @@
     color: $gray;
     &:hover {
       color: $white;
-      text-decoration: underline;
+      border-bottom: 1px solid $white;
     }
   }
 }
@@ -101,11 +101,9 @@
   text-align: center;
 
   a {
-    display: block;
-    width: 100%;
     color: $white;
     &:hover {
-      color: $gray;
+      border-bottom: 4px solid $white;
     }
   }
 }

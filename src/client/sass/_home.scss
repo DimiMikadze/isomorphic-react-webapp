@@ -9,40 +9,41 @@
 .welcome-home {
   overflow: hidden;
   text-align: center;
-  background-color: $purple;
+  background-color: $white;
   padding: 3em 0 5em 0;
   margin-bottom: 4em;
 
   .about-me {
     text-align: center;
-    max-width: 1300px;
     margin: 0 auto;
 
     h1 {
+      @include font-size(55px);
+      color: $light-black;
       font-weight: lighter;
       padding: 0 6em;
       @include md-bf-medium() {
         padding: 0 1em;
       }
-      font-size: 1.9em;
-      color: $white;
     }
+
   }
 
   .go-to-work {
     font-size: 1.6em;
     text-align: center;
     margin-top: 2em;
-
     a {
-      @include transition(background-color 0.5s ease);
       color: $light-black;
-      background-color: $white;
       padding: 0.4em 2em;
+      border: 1px solid $purple;
       border-radius: 0.2em;
       @include font-size(34px);
+      @include transition(all ease .5s);
+      box-shadow: inset 0 0 0 0 $purple;
       &:hover {
-        background-color: darken($white, 3);
+        color: $white;
+        box-shadow: inset 300px 0 0 0 $purple;
       }
     }
   }
@@ -51,11 +52,16 @@
 .some-work {
   text-align: center;
   padding-bottom: 6em;
+  background-color: $light-gray;
 }
 
 h2 {
   font-weight: bold;
   @include font-size(35px);
+}
+
+.home-work-header {
+  margin-top: 4em;
 }
 
 .home-work-container {
@@ -121,22 +127,24 @@ h2 {
   margin-top: 2em;
 
   a {
-    color: $white;
-    background-color: $green;
+    color: $light-black;
     padding: 0.4em 2em;
     border-radius: 0.2em;
     @include font-size(34px);
-    @include transition(background-color 0.5s ease);
-
+    border: 1px solid $green;
+    @include transition(all ease .5s);
+    box-shadow: inset 0 0 0 0 $green;
     &:hover {
-      background-color: darken($green, 5);
+      color: $white;
+      box-shadow: inset 400px 0 0 0 $green;
     }
   }
 }
 
 .testimonials-container {
-  background-color: $light-gray;
+  background-color: $purple;
   padding: 5em 0;
+  color: $white;
 
   .testimonials {
     text-align: center;
@@ -147,9 +155,8 @@ h2 {
     }
 
     .testimonial {
-
       .t-name {
-        color: $purple;
+        color: $white;
       }
 
       @include md-xsmall() {
