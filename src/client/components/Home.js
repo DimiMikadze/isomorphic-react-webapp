@@ -45,7 +45,6 @@ class Home extends React.Component {
                                 I'm full stack web and mobile app developer, experienced in UX/UI design.
                                 Past several years i collaborated with amazing people around the world to create beautifully designed, robust solutions.
                                 I’m passionate about building high quality applications and user interfaces with modern web technologies.
-                                In my free time i enjoy contributing to open source projects.
                             </h1>
                             <div className="go-to-work">
                                 <Link to="/skills">
@@ -58,7 +57,7 @@ class Home extends React.Component {
 
                 <div className="some-work">
                     <div className="container">
-                        <h2 className="wow fadeInUp home-work-header">Some Of My Work</h2>
+                        <h2 className="wow fadeInUp home-work-header">Some Of My Works</h2>
                         <div className="home-work-container">
                             {work}
                         </div>
