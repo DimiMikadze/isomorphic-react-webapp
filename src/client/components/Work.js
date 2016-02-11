@@ -34,7 +34,7 @@ class Work extends React.Component {
                         <h2 className="wow fadeInUp">Below are a few selected pieces of work</h2>
 
                         {work}
-                        <a href="mailto:dimitrimikadze@gmail.co?subject=I want awesome app">
+                        <a href="mailto:dimitrimikadze@gmail.com">
                             <div className="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
                                 <div className="your-project">
                                     <h3>Your Project Next</h3>
