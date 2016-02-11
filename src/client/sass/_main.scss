@@ -43,6 +43,10 @@ a, button {
   visibility: hidden;
 }
 
+.ie10 .wow {
+  visibility: visible;
+}
+
 .old-browsers {
   display: none;
 }
