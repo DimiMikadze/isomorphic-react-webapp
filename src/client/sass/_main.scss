@@ -59,13 +59,13 @@ a, button {
     background-color: $purple;
     z-index: 100;
     color: $white;
-    @include font-size(50px);
+    font-size: 30px;
     text-align: center;
 
     span {
-      margin-top: 6em;
+      margin-top: 160px;
       display: block;
-      line-height: 4em;
+      line-height: 100px;
     }
 
     a {
