@@ -42,3 +42,40 @@ a, button {
 .wow {
   visibility: hidden;
 }
+
+.old-browsers {
+  display: none;
+}
+
+.oldy {
+
+  .old-browsers {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $purple;
+    z-index: 100;
+    color: $white;
+    @include font-size(50px);
+    text-align: center;
+
+    span {
+      margin-top: 6em;
+      display: block;
+      line-height: 4em;
+    }
+
+    a {
+      color: $light-gray;
+      border-bottom: 3px solid $light-gray;
+      &:hover {
+        color: $white;
+        border-bottom: 3px solid $white;
+      }
+    }
+
+  }
+}
