@@ -43,6 +43,10 @@ a, button {
   visibility: hidden;
 }
 
+html[data-useragent*='MSIE 10.0'] .wow {
+  visibility: visible;
+}
+
 .old-browsers {
   display: none;
 }

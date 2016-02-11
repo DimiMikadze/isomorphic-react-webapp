@@ -6,6 +6,9 @@ import { routes } from '../shared/routes';
 
 import createBrowserHistory from './../../node_modules/history/lib/createBrowserHistory';
 
+let doc = document.documentElement;
+doc.setAttribute('data-useragent', navigator.userAgent);
+
 const wow = new WOW({ mobile: false });
 wow.init();
 
