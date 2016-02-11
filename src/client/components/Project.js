@@ -31,7 +31,7 @@ class Project extends React.Component {
     render() {
 
         let images = this.p.images.map((img, index) => {
-            return <img src={img.name} key={index} />
+            return <img src={img.name} key={index} className="wow fadeInUp"/>
         });
 
         return (
