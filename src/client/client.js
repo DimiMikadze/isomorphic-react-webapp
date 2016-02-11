@@ -13,3 +13,5 @@ ReactDOM.render(
     <Router onUpdate={() => window.scrollTo(0, 0)} routes={routes} history={createBrowserHistory()} />,
     document.getElementById('react-root')
 );
+
+wow.sync();
