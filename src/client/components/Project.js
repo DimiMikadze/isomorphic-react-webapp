@@ -37,8 +37,8 @@ class Project extends React.Component {
         return (
             <div className="project-container">
 
-                <Link to={this.initialUrl}>
-                    <div className="close-btn">&#215;</div>
+                <Link to={this.initialUrl} className="close-btn">
+                    &#215;
                 </Link>
 
                 <div className="project-desc" style={{backgroundColor: this.p.backgroundColor}}>
@@ -47,17 +47,19 @@ class Project extends React.Component {
 
                         <h1 className="wow fadeInDown">{this.p.name}</h1>
 
-                        <div className="service wow fadeInLeft">
-                            <p className="heading">Service</p>
-                            <h3 className="text">{this.p.job}</h3>
+                        <div className="service-about wow fadeInLeft" data-wow-delay=".3s">
+                            <div className="service">
+                                <p className="heading">Service</p>
+                                <h3 className="text">{this.p.job}</h3>
+                            </div>
+
+                            <div className="about-project">
+                                <p className="heading">About Project</p>
+                                <p className="text">{this.p.desc}</p>
+                            </div>
                         </div>
 
-                        <div className="about-project wow fadeInLeft">
-                            <p className="heading">About Project</p>
-                            <p className="text">{this.p.desc}</p>
-                        </div>
-
-                        <div className="project-images wow fadeInUp">
+                        <div className="project-images wow fadeInUp" data-wow-delay=".4s">
                             {images}
                         </div>
 

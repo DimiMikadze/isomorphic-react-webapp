@@ -21,6 +21,7 @@
     padding: 0 0.2em;
     text-shadow: 2px 2px 5px $light-black;
     @include transition(background-color 0.1s ease);
+    text-align: center;
     &:hover {
       text-shadow: none;
       background-color: $white;
@@ -54,6 +55,11 @@
     @include md-xsmall() {
       @include font-size(40px);
     }
+
+  }
+
+  .service-about {
+    overflow: hidden;
   }
 
   .about-project {
