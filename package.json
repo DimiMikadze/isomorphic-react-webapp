@@ -34,8 +34,7 @@
     "node-jsx": "^0.13.3",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
-    "react-router": "^1.0.0-rc4",
-    "wow.js": "^1.1.2"
+    "react-router": "^1.0.0-rc4"
   },
   "devDependencies": {
     "babel-cli": "^6.4.5",
