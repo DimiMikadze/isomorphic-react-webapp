@@ -19,7 +19,7 @@ Dependencies are located in package.json file
 Clone Repo
 
 ````
-https://github.com/DimitriMikadze/isomorphic-react-webapp
+git clone https://github.com/DimitriMikadze/isomorphic-react-webapp.git
 ````
 
 Npm install dependencies
