@@ -25,7 +25,9 @@ https://github.com/DimitriMikadze/isomorphic-react-webapp
 Npm install dependencies
 
 ````
-cd isomorphic-react-webapp & npm install
+cd isomorphic-react-webapp 
+
+npm install
 ````
 
 Start Server
