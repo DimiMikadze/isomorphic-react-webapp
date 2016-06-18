@@ -21,12 +21,10 @@ app.get('/sitemap.xml', (req, res) => {
 
 app.get('*', (req, res) => {
   match({routes, location: req.url}, (err, redirectLocation, props) => {
-
-    console.log('REQ URL' + req.url);
-    console.log('HEADER HOST' + req.headers.host);
-
     if (req.headers.host.match(/^www/) !== null) {
       res.redirect('http://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else if (req.headers.host.toLowerCase() === 'geegle.io') {
+      res.render('geegle');
     } else if (err) {
       res.status(500).send(err.message);
     } else if (redirectLocation) {
