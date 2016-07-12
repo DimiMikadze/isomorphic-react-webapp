@@ -1,5 +1,5 @@
 import express from 'express';
-
+import cors from 'cors';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
@@ -13,6 +13,8 @@ app.set("views", __dirname + "/static/views");
 
 app.use(express.static("static"));
 app.use(express.static("dist"));
+app.use(express.static("static/views/lessons"));
+app.use(cors());
 
 app.get('/sitemap.xml', (req, res) => {
   res.header('Content-Type', 'application/xml');

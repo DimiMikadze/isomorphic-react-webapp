@@ -28,6 +28,7 @@
     "babel-preset-react": "^6.1.2",
     "babel-preset-stage-2": "^6.3.13",
     "babel-register": "^6.3.13",
+    "cors": "^2.7.1",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "history": "^1.13.1",
