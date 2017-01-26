@@ -8,12 +8,6 @@ Shared JavaScript Web Application that runs on both the client & server using Re
 - Search engine indexable
 - Easier code maintenance
 
-## Demo
-
-http://dimitrimikadze.com/
-
-Dependencies are located in package.json file
-
 ## Getting Started
 
 Clone Repo
